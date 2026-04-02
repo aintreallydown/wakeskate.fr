@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'brockmann';
+    src: url(../font/brockmann-medium-webfont.woff) format('woff');
+    font-display: swap;
+}
+
+
+.article-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.article-card img {
+
+    width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+    
+}
+.article-card {
+    display: block;
+    text-align: center;
+}
+
+.article-section {
+    padding: 20px;
+    margin: 20px 20px auto;
+}
+
+.article-section h2 {
+    font-family: 'brockmann';
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+@media screen and (max-width: 1000px) {
+    .article-section {
+        padding: 5px;
+        margin: 5px 5px auto;
+    }
+
+    .info {
+        flex-direction: row;
+        display: flex;
+        font-size: 7px;
+        gap: 5px;
+    }
+
+}
+
+
+
+.section-tuto {
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+
+
+.separator {
+    border-top: 1px solid rgb(0, 0, 0);
+    /* couleur bleue */
+    width: 40%;
+    /* largeur du trait */
+    margin: 20px auto;
+    padding: 10px 0;
+    /* espace vertical + centrage horizontal */
+}
+
+
+
+
+.bandeau {
+
+    color: black;
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+
+    text-decoration: none;
+    height: 100%;
+    cursor: pointer;
+
+
+}
+
+
+
+@keyframes pulseWhite {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+
+
+#dark-mode-toggle {
+    -webkit-tap-highlight-color: transparent;
+    /* Chrome / Safari */
+    outline: none;
+    /* supprime le contour au focus */
+}
+
+#dark-mode-toggle:focus {
+    outline: none;
+    /* au cas où */
+}
+
+
+.bandeau h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'marianne';
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100px;
+    /* largeur fixe */
+    height: 100px;
+    /* même valeur que width */
+    display: flex;
+    /* pour centrer le texte */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    -webkit-tap-highlight-color: transparent;
+    /* évite le carré bleu sur mobile */
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+
+.section {
+    position: relative;
+    padding: 30px 20px;
+}
+
+.section.animate {
+    animation: parallax 0.5s ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes parallax {
+    from {
+        transform: translateY(40px);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+

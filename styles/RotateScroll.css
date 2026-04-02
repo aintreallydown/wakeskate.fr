@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'brockmann';
+    src: url(../font/brockmann-medium-webfont.woff) format('woff');
+    font-display: swap;
+}
+
+
+.container {
+    background-color: #E5E4E4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+.circular span{
+    font-family: 'brockmann'
+
+}

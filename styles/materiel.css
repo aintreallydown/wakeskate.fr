@@ -1,0 +1,72 @@
+body {
+    overflow: scroll;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+.bandeau {
+    background-image: url(../images/373103562_ea68d78a-bfdd-48d1-a141-37186970ff4b.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.separator {
+    border-top: solid 3px;
+    /* Bordure supérieure de 3 pixels, en pointillés et bleue */
+    margin: 15px 0;
+    width: 80%;
+    /* Réduit la largeur de la ligne */
+}
+
+
+
+.content {
+    flex-grow: 1;
+    /* Prend l'espace restant */
+    padding: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .content {
+        padding: 10px;
+        /* Réduire le padding pour les petits écrans */
+    }
+
+    iframe {
+        width: 100%;
+        /* L'iframe prend toute la largeur de son conteneur */
+        height: 300px;
+        /* Hauteur fixe pour l'iframe */
+    }
+
+}
