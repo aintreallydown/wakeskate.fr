@@ -209,6 +209,30 @@ require_once '../elements/confidentialite.php';
             <p><a href="https://www.youtube.com/watch?v=dztJr-_SwgI" target="_blank">Lire la video</a></p> 
         </div>
     </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>04.</p>
+        </div>
+        <div class="grid-item">
+            <h2>Rentrée 2026</h2>
+        </div>
+        <div class="grid-item">
+        <p>Aujourd'hui c'etait la rentrée de wakeskate 2026, au wakepark de Verberie, autant dire qu'il m'avait manqué !
+            Toujours aussi bien entretenu, le set up est toujours aussi bien pensé pour les riders de tous niveaux. 
+            Trés content de revenir et de retrouvé tout les copains du plan d'eau. 
+            Le spot est toujours aussi agréable, avec une ambiance conviviale et dynamique. 
+            C'est un lieu où l'on peut progresser, rencontrer d'autres passionnés de glisse et 
+            partager des moments inoubliables. 
+            Bref, un endroit à ne pas manquer pour tous les amateurs de wakeskate et de wakeboard !
+            Ce début d'année 2026 commence trés fort, car j'ai changé de metier, de ville et de région. Je suis maintenant developpeur web, je peux donc beaucoup mieux ammenager mon temps pour rider et progresser. 
+            Je suis donc trés content de pouvoir rider plus souvent et de pouvoir enfin m'envoyer à la casse.
+        </p>
+        </p>
+        </div>
+        <div class="grid-item">
+    
+        </div>
+    </div>
 </div>
 
     <footer>
