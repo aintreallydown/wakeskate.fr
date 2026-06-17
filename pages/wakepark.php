@@ -225,7 +225,9 @@ require_once '../elements/confidentialite.php';
             partager des moments inoubliables. 
             Bref, un endroit à ne pas manquer pour tous les amateurs de wakeskate et de wakeboard !
             Ce début d'année 2026 commence trés fort, car j'ai changé de metier, de ville et de région. Je suis maintenant developpeur web, je peux donc beaucoup mieux ammenager mon temps pour rider et progresser. 
-            Je suis donc trés content de pouvoir rider plus souvent et de pouvoir enfin m'envoyer à la casse.
+            Je suis donc trés content d'enfin pouvoir prendre du temps pour rider sans stress, et de pouvoir tenter plusieurs nouveaux tricks pendant la session. Au final,
+             le début de saison est hyper prometteur, je me sens a l'aise dans tout les tricks que j'ai tenté, mon pop continue de s'améliorer et je sens que je capte plus de choses encore trés interessantes sur la façon de rider. 
+             Bref, je suis trés content de cette rentrée 2026, et j'ai hâte de voir ce que cette année va me réserver en termes de progression et de fun sur l'eau !</p>
         </p>
         </p>
         </div>
