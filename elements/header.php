@@ -18,6 +18,8 @@
 
     <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="https://wake-skate.fr/images/palo-icon-32x32.ico">
 
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="96965f7a-182e-4f18-aa42-ae4a90edcf9a" data-blockingmode="auto" type="text/javascript"></script>
+
     <!-- SEO -->
     <meta name="description"
         content="Découvrez le wakeskate avec tutoriels, astuces et conseils pour tous les niveaux. Rejoignez la communauté wake-skate.fr !">
