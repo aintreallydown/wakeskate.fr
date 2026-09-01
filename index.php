@@ -1,6 +1,5 @@
 <?php
 
-require_once '../wake-skate.fr/elements/confidentialite.php';
 require_once '../wake-skate.fr/back-end/contactBe.php';
 require_once '../wake-skate.fr/back-end/newsletter.php';
 
@@ -502,7 +501,6 @@ color: rgba(255, 106, 0, 0.951);
 
         <script src="../js/header.js"></script>
 
-        <script src="../js/preferences.js"></script>
         <script src="../js/lazyVideo.js"></script>
         <script src="../js/scrollAnimationBounceUp.js"></script>
 

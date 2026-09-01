@@ -1,7 +1,6 @@
 <?php
 
 require_once '../back-end/contactBe.php';
-require_once '../elements/confidentialite.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -336,7 +335,7 @@ require_once '../elements/confidentialite.php';
     </script>
 
     <script src="../js/header.js"></script>
-    <script src="../js/preferences.js"></script>
+     
     <script src="../js/responsive.js"></script>
 
 

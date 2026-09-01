@@ -1,7 +1,3 @@
-<?php
-
-require_once '../elements/confidentialite.php';
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -281,7 +277,7 @@ tbody tr:hover {
 
     <script src="../js/header.js">
     </script>
-    <script src="../js/preferences.js"></script>
+     
 
 </body>
 

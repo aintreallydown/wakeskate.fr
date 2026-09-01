@@ -1,8 +1,4 @@
-<?php
-// Include the header file
 
-require_once '../elements/confidentialite.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -347,7 +343,7 @@ color: rgba(255, 106, 0, 0.951);
         });
     </script>
     <script src="../js/header.js"></script>
-    <script src="../js/preferences.js"></script>
+     
 
 
 </body>

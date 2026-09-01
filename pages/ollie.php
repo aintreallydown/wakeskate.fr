@@ -1,7 +1,4 @@
-<?php
 
-require_once '../elements/confidentialite.php';
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -161,7 +158,7 @@ de celle-ci pour plus d’équilibre.</p>
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <script src="../js/header.js"></script>
-    <script src="../js/preferences.js"></script>
+     
 
 
 </body>

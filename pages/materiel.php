@@ -1,9 +1,4 @@
-<?php
 
-
-require_once '../elements/confidentialite.php';
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -248,7 +243,7 @@ require_once '../elements/confidentialite.php';
 
 
     <script src="../js/header.js"></script>
-    <script src="../js/preferences.js"></script>
+     
 
 </body>
 

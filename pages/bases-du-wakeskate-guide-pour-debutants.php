@@ -1,7 +1,4 @@
-<?php
 
-require_once '../elements/confidentialite.php';
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -181,7 +178,7 @@ body {
 
     <script src="../js/header.js">
     </script>
-    <script src="../js/preferences.js"></script>
+     
 
 </body>
 
