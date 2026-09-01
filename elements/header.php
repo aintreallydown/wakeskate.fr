@@ -1,6 +1,3 @@
-<?php
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,8 +14,6 @@
     <link rel="icon" type="image/png" sizes="48x48" href="https://wake-skate.fr/images/palo-icon-48x48.png">
 
     <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="https://wake-skate.fr/images/palo-icon-32x32.ico">
-
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="96965f7a-182e-4f18-aa42-ae4a90edcf9a" data-blockingmode="auto" type="text/javascript"></script>
 
     <!-- SEO -->
     <meta name="description"
@@ -37,9 +32,7 @@
 
 
 </head>
-<style>
 
-</style>
 
 
 

@@ -55,7 +55,6 @@ if (isset($_POST['newsletter_submit'])) {
                 $mail->SMTPSecure = 'tls';
                 $mail->Port = 587;
 
-                // ✅ Encodage UTF-8 pour éviter les caractères cassés
                 $mail->CharSet = 'UTF-8';
 
                 // Infos de l'email
