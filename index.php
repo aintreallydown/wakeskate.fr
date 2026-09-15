@@ -91,6 +91,7 @@ require_once 'back-end/newsletter.php';
 
     gtag('config', 'G-27ZTXGK330');
 </script>
+
 <body id="dark-mode" class="theme-index">
 
 
@@ -159,7 +160,7 @@ require_once 'back-end/newsletter.php';
         </div>
     </div>
 
-    <div class="hero-section">
+    <!-- <div class="hero-section">
         <div class="hero-sub-container">
             <div class="hero-sub bounce"><a href="/mon-retour-sur-la-progression-en-wakeskate" class="hero-link"></a></div>
             <div class="hero-sub bounce"><a href="/kickflip" class="hero-link"></a></div>
@@ -169,7 +170,9 @@ require_once 'back-end/newsletter.php';
         <div class="custom__shape">
 
         </div>
-    </div>
+    </div> -->
+
+    <img src="../images/schema.png" alt="Wakeskate" class="hero-image">
     <div class="brockmanTitle">
         <p><a href="/mon-retour-sur-la-progression-en-wakeskate">W<i>A</i>KESK<i>A</i>TE YOUR OWN W<span class="italic-reverse">A</span>Y.</a></p><br />
         <p><a href="/tuto">TUTORIELS</a></p><br />
@@ -308,10 +311,7 @@ require_once 'back-end/newsletter.php';
             <li><a href="/tuto">Tutoriel</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/mentions-legales">Mentions légales & CGU</a></li>
-            <li><button type="button" id="change-preferences"
-                    style=" bottom: 20px; right: 20px; cursor:pointer; background: none; border: none; color:#212221; text-decoration: none; font-size: 1em; padding: 0; font-family: 'marianne';">
-                    Modifier mes préférences
-                </button></li>
+
         </ul>
     </footer>
 

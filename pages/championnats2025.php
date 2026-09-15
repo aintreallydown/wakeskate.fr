@@ -208,10 +208,7 @@
             <li><a href="/tuto">Tutoriel</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/mentions-legales">Mentions légales & CGU</a></li>
-            <li><button type="button" id="change-preferences"
-                    style=" bottom: 20px; right: 20px; cursor:pointer; background: none; border: none; color:#212221; text-decoration: none; font-size: 1em; padding: 0; font-family: 'marianne';">
-                    Modifier mes préférences
-                </button></li>
+
         </ul>
     </footer>
     <script>
