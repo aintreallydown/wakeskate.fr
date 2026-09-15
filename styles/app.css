@@ -31,6 +31,22 @@
 
 
 /* =========================================================================
+   0) COULEURS (variables globales)
+   Centralise la nouvelle charte (vert olive / orange-rouge / beige) pour
+   pouvoir la faire évoluer en un seul endroit à l'avenir.
+   ========================================================================= */
+:root {
+    --color-primary: #B6CADF;
+    --color-accent: #4D424C;
+    --color-bg: #f7e9c6;
+    --color-bg-alt: #E5E4E4;
+    --color-bg-muted: #f4f4f4;
+    --color-text: #212221;
+    --color-text-dark: #102837;
+}
+
+
+/* =========================================================================
    1) POLICES
    ========================================================================= */
 @font-face {
@@ -133,7 +149,7 @@ html {
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: #f4f4f4;
+    background-color: var(--color-primary);
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -161,7 +177,7 @@ html {
 .logo {
     font-size: 25px;
     text-transform: uppercase;
-    color: #212221;
+    color: var(--color-text);
     font-weight: lighter;
     display: block;
 }
@@ -328,7 +344,7 @@ footer {
     bottom: 0;
     max-width: 100%;
     min-height: 160px;
-    background-color: #f4f4f4;
+    background-color: var(--color-bg-muted);
     text-align: center;
     font-size: 14px;
 }
@@ -339,7 +355,7 @@ footer ul {
 }
 
 footer a {
-    color: #212221;
+    color: var(--color-text);
     text-decoration: none;
     margin: 0 10px;
 }
@@ -446,10 +462,10 @@ footer a:hover {
    6) PAGE D'ACCUEIL (index.php) — <body class="theme-index">
    ========================================================================= */
 body.theme-index {
-    color: #102837;
+    color: var(--color-text-dark);
     font-family: 'marianne';
     overflow-x: hidden;
-    background-color: #E5E4E4;
+    background-color: var(--color-bg);
     font-weight: 200;
 }
 
@@ -524,7 +540,7 @@ body.theme-index .color-container::before {
     left: 0;
     width: 50%;
     height: 400px;
-    background-color: rgba(241, 124, 28, 0.83);
+    background-color: var(--color-primary);
     z-index: -1;
 }
 
@@ -573,7 +589,7 @@ body.theme-index .custom__shape::before {
     left: 0;
     width: 165px;
     height: 215px;
-    background: #E5E4E4;
+    background: var(--color-bg-alt);
     border-radius: 0 30px 30px 0;
     z-index: 0;
 }
@@ -701,13 +717,13 @@ body.theme-index .brockmanTitle p {
     font-size: 2.5em;
     text-align: center;
     line-height: 0.85;
-    color: #212221;
+    color: var(--color-accent);
     cursor: pointer;
 }
 
 body.theme-index .brockmanTitle a {
     text-decoration: none;
-    color: #212221;
+    color: var(--color-accent);
 }
 
 body.theme-index .brockmanTitle p::after {
@@ -763,6 +779,10 @@ body.theme-index .grid-item:nth-child(1) {
 body.theme-index .grid-item i {
     font-size: inherit;
     line-height: inherit;
+}
+
+body.theme-index .grid-item h2 {
+    color: var(--color-accent);
 }
 
 body.theme-index .grid-item:nth-child(2) {
@@ -825,7 +845,7 @@ body.theme-index .form-container {
     width: 100%;
     text-align: start;
     justify-content: start;
-    color: #212221;
+    color: var(--color-text);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -838,7 +858,7 @@ body.theme-index .form-container::before {
     right: 0px;
     width: 80%;
     height: 90%;
-    background-color: rgba(241, 124, 28, 0.83);
+    background-color: var(--color-primary);
     z-index: -1;
 }
 
@@ -1168,11 +1188,11 @@ body.theme-tuto {
     font-family: 'marianne';
     line-height: 1.6;
     color: #2f2e2e;
-    background-color: #E5E4E4;
+    background-color: var(--color-bg);
 }
 
 body.theme-tuto #loading-bar {
-    background: rgba(241, 124, 28, 0.83);
+    background: var(--color-primary);
 }
 
 body.theme-tuto .separator {
@@ -1204,6 +1224,11 @@ body.theme-tuto .grid-item:nth-child(1) {
 body.theme-tuto .grid-item i {
     font-size: inherit;
     line-height: inherit;
+}
+
+body.theme-tuto .grid-item h1,
+body.theme-tuto .grid-item h2 {
+    color: var(--color-accent);
 }
 
 body.theme-tuto .grid-item:nth-child(2) {
@@ -1250,7 +1275,7 @@ body.theme-tuto .color-container::before {
     left: 0;
     width: 50%;
     height: 400px;
-    background-color: rgba(241, 124, 28, 0.83);
+    background-color: var(--color-primary);
     z-index: -1;
 }
 
@@ -1266,7 +1291,7 @@ body.theme-tuto .color-container__2::before {
     top: 1850px;
     width: 50%;
     height: 400px;
-    background-color: rgba(241, 124, 28, 0.83);
+    background-color: var(--color-primary);
     z-index: -1;
 }
 
@@ -1298,7 +1323,7 @@ body.theme-tuto .color-container__2::before {
    rotationAngle = scrollPos * 0.45 / opacity = 1 - scrollPos / 300).
    ========================================================================= */
 body.theme-rotate .container {
-    background-color: #E5E4E4;
+    background-color: var(--color-bg);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -1412,7 +1437,7 @@ body.theme-wakepark .second-body {
 body.theme-blog {
     font-family: 'marianne';
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: var(--color-bg);
     color: black;
 }
 
