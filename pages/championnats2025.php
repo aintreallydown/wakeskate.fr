@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,119 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="../styles/consent.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-
-    <link rel='stylesheet' href='../styles/header.css'>
+    <link rel="stylesheet" href="../styles/app.css">
 
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
-    
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4810298741612120"
-     crossorigin="anonymous"></script>
-    
+        crossorigin="anonymous"></script>
+
     <title>Championnats de wakeboard & wakeskate - France 2025</title>
-    <style>
-    @font-face {
-        font-family: 'marianne';
-        src: url(../font/Marianne-Regular.woff2) format('woff2');
-
-    }
-
-    * {
-        font-family: 'marianne';
-    }
-
-
-
-    body {
-        font-family: 'marianne';
-
-
-        line-height: 1.6;
-        background-color: #f4f4f4;
-        color: black;
-    }
-
-
-    .article-card h3 {
-        font-size: 1.5em;
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .article-card img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        max-width: 100%;
-
-
-    }
-
-    .article-section p,
-    .article-section h1,
-    .article-section h2 {
-        margin: 20px 0;
-        padding: 20px;
-
-    }
-
-    .info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        font-size: smaller;
-    }
-
-    @media screen and (max-width: 1000px) {
-        .article-section {
-            padding: 5px;
-            margin: 5px 5px auto;
-        }
-
-        .info {
-            flex-direction: row;
-            display: flex;
-            font-size: 7px;
-            gap: 5px;
-        }
-
-    }
-
-
-
-    .section-tuto {
-        background-color: transparent;
-        padding: 20px;
-        margin-top: 20px;
-
-    }
-
-    #loading-bar-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: rgba(0, 0, 0, 0.1);
-        z-index: 9999;
-    }
-
-    #loading-bar {
-        width: 0;
-        height: 100%;
-        background: #FF5C35;
-        transition: width 0.25s;
-    }
-    </style>
 </head>
 
-<body>
-    <div id="loading-bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+<body class="theme-article theme-championnats">
+    <div id="" role="progressbar" aria-valuemin="0" aria-valuemax="100">
         <div id="loading-bar"></div>
     </div>
-     <?php 
+    <?php
     require_once '../elements/navigation.php';
     ?>
 
@@ -304,37 +205,37 @@
         <ul>
 
             <li><a href="/">Accueil</a></li>
-            <li><a href="/tuto">Tutoriel</a></li> 
+            <li><a href="/tuto">Tutoriel</a></li>
             <li><a href="/blog">Blog</a></li>
-            <li><a href="/mentions-legales">Mentions légales & CGU</a></li> 
+            <li><a href="/mentions-legales">Mentions légales & CGU</a></li>
             <li><button type="button" id="change-preferences"
-                style=" bottom: 20px; right: 20px; cursor:pointer; background: none; border: none; color:#212221; text-decoration: none; font-size: 1em; padding: 0; font-family: 'marianne';">
-                Modifier mes préférences
-            </button></li> 
+                    style=" bottom: 20px; right: 20px; cursor:pointer; background: none; border: none; color:#212221; text-decoration: none; font-size: 1em; padding: 0; font-family: 'marianne';">
+                    Modifier mes préférences
+                </button></li>
         </ul>
-        </footer>
+    </footer>
     <script>
-    //progress bar
-    document.addEventListener('DOMContentLoaded', () => {
-        const progressBar = document.getElementById('loading-bar');
+        //progress bar
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBar = document.getElementById('loading-bar');
 
-        function updateProgressBar() {
-            const scrollTop = window.scrollY;
-            const docHeight = document.body.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            progressBar.style.width = scrollPercent + '%';
-        }
+            function updateProgressBar() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.body.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
+                progressBar.style.width = scrollPercent + '%';
+            }
 
-        window.addEventListener('scroll', updateProgressBar);
-        updateProgressBar(); // Initial call
-    });
+            window.addEventListener('scroll', updateProgressBar);
+            updateProgressBar(); // Initial call
+        });
     </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <script src="../js/header.js"></script>
-     
+
 </body>
 
 </html>

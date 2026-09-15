@@ -7,10 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../styles/tuto.css">
-    <link rel="stylesheet" href="../styles/consent.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/app.css">
 
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
@@ -22,32 +19,9 @@
 
     
     <title>Tutoriel de wakeskate - shuvit</title>
-
-    <style>
-        @font-face {
-            font-family: 'marianne';
-            src: url(../font/Marianne-Regular.woff2) format('woff2');
-
-        }
-
-        * {
-            font-family: 'marianne';
-        }
-
-        body {
-            color: #2f2e2e;
-            overflow: scroll;
-            background-color: #E5E4E4;
-        }
-
-      
-
-
-      
-    </style>
 </head>
 
-<body>
+<body class="theme-tuto">
 
      <?php 
     require_once '../elements/navigation.php';

@@ -30,99 +30,19 @@
     <title>Tutoriel de wakeskate</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../styles/tuto.css">
-    <link rel="stylesheet" href="../styles/consent.css">
-    <link href='../styles/header.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../styles/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/RotateScroll.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<style>
-    @font-face {
-        font-family: 'marianne';
-        src: url(../font/Marianne-Regular.woff2) format('woff2');
-
-    }
-
-
-    body {
-        font-family: 'marianne';
-        max-width: 100%;
-
-        line-height: 1.6;
-        background-color: #E5E4E4;
-        color: black;
-    }
-
-
-
-    #loading-bar-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: rgba(0, 0, 0, 0.1);
-        z-index: 9999;
-    }
-
-    #loading-bar {
-        width: 0;
-        height: 100%;
-        background:rgba(241, 124, 28, 0.83);
-        transition: width 0.25s;
-    }
-
-
-
-    .color-container {
-        z-index: -2;
-        width: 100%;
-        padding: 20px;
-    }
-    .color-container::before{
-        content: "";
-        position: absolute;
-        top: 900px;
-        left: 0;
-        width: 50%; /* couleur sur 50% seulement */
-        height: 400px;
-        background-color: rgba(241, 124, 28, 0.83);
-        z-index: -1; /* derrière le contenu */
-
-    }
-
-    
-        
-</style>
 </head>
 
-<body id="dark-mode">
+<body id="dark-mode" class="theme-tuto theme-rotate">
     <div id="loading-bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100">
         <div id="loading-bar"></div>
     </div>
     <div class="container">
-        <div class="circular">
-            <span class="char" data-idx="0">W</span>
-            <span class="char" data-idx="1"><i>A</i></span>
-            <span class="char" data-idx="2">K</span>
-            <span class="char" data-idx="3">E</span>
-            <span class="char" data-idx="4">S</span>
-            <span class="char" data-idx="5">K</span>
-            <span class="char" data-idx="6"><i>A</i></span>
-            <span class="char" data-idx="7">T</span>
-            <span class="char" data-idx="8">E</span>
-            <span class="char" data-idx="9">• </span>
-            <span class="char" data-idx="10">T</span>
-            <span class="char" data-idx="11">U</span>
-            <span class="char" data-idx="12">T</span>
-            <span class="char" data-idx="13">O</span>
-            <span class="char" data-idx="14">R</span>
-            <span class="char" data-idx="15">I</span>
-            <span class="char" data-idx="16"><i>A</i></span>
-            <span class="char" data-idx="17">L</span>
-            <span class="char" data-idx="18">S</span>
+        <div>
+            <h1 class="hero-section">W<i>A</i>KESK<i>A</i>TE • TUTORI<i>A</i>LS</h1>
         </div>
     </div>
 
@@ -323,24 +243,6 @@
 
             window.addEventListener('scroll', updateProgressBar);
             updateProgressBar(); // Initial call
-        });
-        //landing letter rotation on scroll
-        $(window).on('scroll', function() {
-            let scrollPos = $(this).scrollTop();
-
-            let rotationAngle = scrollPos * 0.45;
-
-            // Calcule une opacité qui diminue avec le scroll
-            // Ex. : à 0px => 1 (opaque), à 500px => 0 (transparent)
-            let opacity = 1 - scrollPos / 300;
-
-            // Limite l'opacité entre 0 et 1
-            opacity = Math.max(0, Math.min(1, opacity));
-
-            $('.circular').css({
-                'transform': ' rotate(' + rotationAngle + 'deg)',
-                'opacity': opacity
-            });
         });
     </script>
 

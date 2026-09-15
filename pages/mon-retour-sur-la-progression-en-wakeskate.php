@@ -8,9 +8,7 @@
     <!-- Font Awesome CDN (version 5 ou 6 selon ce que tu utilises) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Lien vers le fichier CSS -->
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/consent.css">
-    <link rel='stylesheet' type='text/css' href='../styles/header.css'>
+    <link rel="stylesheet" href="../styles/app.css">
 
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
@@ -22,77 +20,9 @@
 
     <title>Mon retour sur la progression en wakeskate</title>
 </head>
-<style>
-@font-face {
-    font-family: 'marianne';
-    src: url(../font/Marianne-Regular.woff2) format('woff2');
-}
-
-body {
-    font-family: 'marianne';
 
 
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: black;
-}
-
-
-.article-card h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-    text-align: center;
-}
-
-.article-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    max-width: 100%;
-
-
-}
-
-.article-section p,
-.article-section h1,
-.article-section h2 {
-    margin: 20px 0;
-    padding: 20px;
-
-}
-
-.info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: smaller;
-}
-
-@media screen and (max-width: 1000px) {
-    .article-section {
-        padding: 5px;
-        margin: 5px 5px auto;
-    }
-
-    .info {
-        flex-direction: row;
-        display: flex;
-        font-size: 7px;
-        gap: 5px;
-    }
-
-}
-
-.section-tuto {
-    background-color: transparent;
-    padding: 20px;
-    margin-top: 20px;
-
-}
-</style>
-
-
-<body>
+<body class="theme-article">
      <?php 
     require_once '../elements/navigation.php';
     ?>

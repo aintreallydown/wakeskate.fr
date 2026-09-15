@@ -1,0 +1,1875 @@
+/* =========================================================================
+   FEUILLE DE STYLE UNIQUE DU SITE
+   Fusion de tous les fichiers styles/*.css utilisés + de tous les <style>
+   inline qui étaient répétés dans chaque page PHP.
+
+   Organisation :
+   1) Polices
+   2) Reset & utilitaires globaux (toutes les pages)
+   3) En-tête / navigation (toutes les pages)
+   4) Pied de page (toutes les pages)
+   5) Bannière de consentement cookies (toutes les pages)
+   6) Page d'accueil (index.php)
+   7) Pages tutoriels (tuto, kickflip, ollie, shove, materiel, quisuisje, wakepark)
+   8) Cercle photo animé (wakepark, materiel, tuto, quisuisje)
+   9) Page Wakepark (effet machine à écrire + bandeau)
+   10) Page Blog (liste des articles)
+   11) Pages "article" (bases-du-wakeskate, mon-retour, championnats2025,
+       comment-choisir, quesque-le-wakeskate)
+   12) Page 404
+   13) Mentions légales
+   14) Politique de confidentialité
+
+   Les sections 6 à 14 sont spécifiques à une page (ou un groupe de pages) et
+   ne s'appliquent que si le <body> de la page porte la classe correspondante
+   (theme-index, theme-tuto, theme-rotate, theme-wakepark, theme-blog,
+   theme-article, theme-article-table, theme-quesque, theme-championnats,
+   theme-404, theme-mentions, theme-politique), afin d'éviter que des classes
+   de même nom utilisées différemment d'une page à l'autre (.bandeau,
+   .content, .separator, h1...) ne se marchent dessus.
+   ========================================================================= */
+
+
+/* =========================================================================
+   1) POLICES
+   ========================================================================= */
+@font-face {
+    font-family: 'marianne';
+    src: url(../font/Marianne-Regular.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'brockmann';
+    src: url(../font/brockmann-medium-webfont.woff) format('woff');
+    font-display: swap;
+}
+
+
+/* =========================================================================
+   2) RESET & UTILITAIRES GLOBAUX (toutes les pages)
+   ========================================================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+#loading-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+#loading-bar {
+    width: 0;
+    height: 100%;
+    transition: width 0.25s;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.italic-reverse {
+    display: inline-block;
+    transform: skewX(12deg);
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.animation-element {
+    position: relative;
+    margin-top: 50px;
+}
+
+.bounce-up {
+    opacity: 0;
+    -moz-transition: all 700ms ease-out;
+    -webkit-transition: all 700ms ease-out;
+    -o-transition: all 700ms ease-out;
+    transition: all 700ms ease-out;
+    -moz-transform: translate3d(0px, 200px, 0px);
+    -webkit-transform: translate3d(0px, 200px, 0px);
+    -o-transform: translate(0px, 200px);
+    -ms-transform: translate(0px, 200px);
+    transform: translate3d(0px, 200px, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.bounce-up.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+/* =========================================================================
+   3) EN-TÊTE / NAVIGATION (toutes les pages)
+   ========================================================================= */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.has-submenu {
+    display: none;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #212221;
+    font-weight: lighter;
+    display: block;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    text-decoration: none;
+}
+
+nav ul li {
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #2d2d2d;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1.05px;
+}
+
+.mobile-toggle {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.mobile-toggle span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    background: #8f8f8f;
+    border-radius: 1000px;
+}
+
+@media (max-width: 766px) {
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 40px;
+        position: relative;
+    }
+
+    .logo {
+        order: 1;
+        margin-bottom: 10px;
+        text-align: center;
+        z-index: 1001;
+    }
+
+    .mobile-toggle {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        z-index: 1001;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100vw;
+        background-color: #fff;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+        z-index: 1000;
+        font-family: 'brockmann';
+    }
+
+    body.dark-mode nav ul {
+        background-color: #070707;
+        color: #8f8f8f;
+    }
+
+    .open-nav nav ul {
+        display: flex;
+    }
+
+    ul li.desktop {
+        display: none;
+    }
+
+    .open-nav .mobile-toggle {
+        transform: translateY(-50%) rotate(-90deg);
+    }
+
+    .has-submenu {
+        display: flex;
+    }
+
+    .open-nav .submenu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        padding: 10px 0;
+        list-style: none;
+        width: 100%;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .submenu li {
+        text-align: center;
+    }
+
+    .has-submenu.active .submenu {
+        display: flex;
+    }
+
+    .submenu li a {
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    body.dark-mode .submenu li a {
+        color: #dbd8d8;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+/* =========================================================================
+   4) PIED DE PAGE (toutes les pages)
+   ========================================================================= */
+footer {
+    position: relative;
+    bottom: 0;
+    max-width: 100%;
+    min-height: 160px;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer ul {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+footer a {
+    color: #212221;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.icon-footer {
+    margin-top: 10px;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: rgba(255, 106, 0, 0.951);
+}
+
+
+/* =========================================================================
+   5) BANNIÈRE DE CONSENTEMENT COOKIES (toutes les pages)
+   ========================================================================= */
+.consent-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    animation: slideUp 0.5s ease-out;
+}
+
+.consent-banner a {
+    color: #4c6baf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.consent-banner .accept-cookies {
+    background-color: #4c6baf;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.decline-cookies {
+    background-color: transparent;
+    color: black;
+    border: solid #4c6baf;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.consent-banner p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .consent-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .consent-banner button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .consent-banner p {
+        padding-right: 0;
+    }
+}
+
+
+/* =========================================================================
+   6) PAGE D'ACCUEIL (index.php) — <body class="theme-index">
+   ========================================================================= */
+body.theme-index {
+    color: #102837;
+    font-family: 'marianne';
+    overflow-x: hidden;
+    background-color: #E5E4E4;
+    font-weight: 200;
+}
+
+body.theme-index footer {
+    min-height: 100px;
+}
+
+body.theme-index .grid-item a {
+    text-decoration: none;
+    color: #2a2a2a;
+    cursor: pointer;
+}
+
+body.theme-index .form-note a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+body.theme-index .form-note p {
+    font-size: 1.2em;
+}
+
+body.theme-index #modal {
+    z-index: 1000;
+}
+
+body.theme-index #modal input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+body.theme-index #toggle-modal {
+    cursor: pointer;
+}
+
+body.theme-index #modal button {
+    background-color: rgb(33, 34, 33);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    body.theme-index .brockmanTitle p a {
+        font-size: 25px;
+    }
+
+    body.theme-index .brockmanTitle {
+        max-width: 100%;
+    }
+}
+
+body.theme-index .color-container {
+    z-index: -2;
+    width: 100%;
+    padding: 20px;
+}
+
+body.theme-index .color-container::before {
+    content: "";
+    position: absolute;
+    top: 900px;
+    left: 0;
+    width: 50%;
+    height: 400px;
+    background-color: rgba(241, 124, 28, 0.83);
+    z-index: -1;
+}
+
+@media screen and (max-width: 900px) {
+    body.theme-index .color-container::before {
+        top: 800px;
+        width: 60%;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body.theme-index .color-container::before {
+        top: 800px;
+        width: 60%;
+        height: 800px;
+    }
+}
+
+body.theme-index .hero-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+body.theme-index .custom__shape {
+    flex-grow: 1;
+    max-width: 600px;
+    height: 450px;
+    background-image: url(../images/IMG-20250712-WA0001.jpg);
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    transition: flex 0.3s ease;
+    position: relative;
+    margin: 0px 20px 20px 0;
+    z-index: 1;
+}
+
+body.theme-index .custom__shape::before {
+    content: '';
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 165px;
+    height: 215px;
+    background: #E5E4E4;
+    border-radius: 0 30px 30px 0;
+    z-index: 0;
+}
+
+body.theme-index .custom__shape::after {
+    content: '';
+    position: absolute;
+    top: 85px;
+    left: -20px;
+    width: 170px;
+    height: 195px;
+    background-image: url(../images/IMG-20250706-WA0013.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px 30px 30px 30px;
+    border: solid 1px #c2c2c2;
+    z-index: 3;
+}
+
+body.theme-index .hero-sub-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 95px;
+    z-index: 2;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+body.theme-index .hero-sub {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 30px;
+    transition: opacity 0.3s ease, width 0.3s ease, margin-left 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+body.theme-index .bounce {
+    animation: slideLeft 1s ease-in-out alternate;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translateX(5px);
+        opacity: 1;
+    }
+
+    85% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body.theme-index .hero-link {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+body.theme-index .hero-sub:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+body.theme-index .hero-sub-container .hero-sub:nth-child(1) {
+    background-image: url(../images/IMG_20250709_175610_266.jpg);
+    background-size: cover;
+    background-position: center;
+    border: solid 1px #c2c2c2;
+}
+
+body.theme-index .hero-sub-container .hero-sub:nth-child(2) {
+    background-image: url(../images/kickflipDriss.png);
+    background-size: cover;
+    background-position: center;
+    border: solid 1px #c2c2c2;
+}
+
+body.theme-index .hero-sub-container .hero-sub:nth-child(3) {
+    background-image: url(../images/FB_IMG_1697614420391.jpg);
+    background-size: cover;
+    background-position: center;
+    border: solid 1px #c2c2c2;
+}
+
+@media screen and (max-width: 1200px) {
+    body.theme-index .hero-sub-container .hero-sub:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    body.theme-index .hero-sub-container .hero-sub:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body.theme-index .hero-sub-container .hero-sub:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    body.theme-index .hero-sub-container .hero-sub:nth-child(4) {
+        display: none;
+    }
+}
+
+body.theme-index .brockmanTitle p {
+    position: relative;
+    display: inline-block;
+    font-family: 'brockmann';
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 0.85;
+    color: #212221;
+    cursor: pointer;
+}
+
+body.theme-index .brockmanTitle a {
+    text-decoration: none;
+    color: #212221;
+}
+
+body.theme-index .brockmanTitle p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+body.theme-index .brockmanTitle p:hover::after {
+    width: 100%;
+}
+
+body.theme-index .brockmanTitle i {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+body.theme-index .brockmanTitle {
+    width: max-content;
+    margin: 20px auto;
+    text-align: center;
+}
+
+body.theme-index .separator {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(98, 98, 98);
+    margin: 40px auto;
+    border-radius: 1px;
+}
+
+body.theme-index .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 4fr;
+    gap: 20px;
+    align-items: start;
+    text-align: start;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+body.theme-index .grid-item:nth-child(1) {
+    text-align: start;
+    width: 250px;
+    margin: 20px;
+}
+
+body.theme-index .grid-item i {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+body.theme-index .grid-item:nth-child(2) {
+    text-align: end;
+}
+
+body.theme-index .grid-item:nth-child(3) {
+    text-align: start;
+}
+
+body.theme-index .grid-item:nth-child(4) {
+    text-align: start;
+}
+
+body.theme-index .grid-item p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 900px) {
+    body.theme-index .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    body.theme-index .grid-item:nth-child(4) {
+        display: none;
+    }
+
+    body.theme-index .grid-item:nth-child(2),
+    body.theme-index .grid-item:nth-child(3) {
+        grid-column: auto;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body.theme-index .grid-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    body.theme-index .grid-item:nth-child(1),
+    body.theme-index .grid-item:nth-child(4) {
+        display: none;
+    }
+
+    body.theme-index .grid-item:nth-child(2),
+    body.theme-index .grid-item:nth-child(3) {
+        grid-column: auto;
+        text-align: start;
+    }
+}
+
+body.theme-index .form-container {
+    position: relative;
+    margin-top: 20px;
+    padding: 100px;
+    max-width: 100%;
+    width: 100%;
+    text-align: start;
+    justify-content: start;
+    color: #212221;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+body.theme-index .form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(241, 124, 28, 0.83);
+    z-index: -1;
+}
+
+body.theme-index .form-container input {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 70%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+}
+
+body.theme-index .form-container textarea {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 70%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+body.theme-index .form-container button {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 70%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+body.theme-index .form-container button:hover {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    body.theme-index .form-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+
+    body.theme-index .form-container input,
+    body.theme-index .form-container textarea,
+    body.theme-index .form-container button {
+        width: 100%;
+    }
+}
+
+body.theme-index .video-container {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+    max-width: 90%;
+    margin: 20px auto;
+    height: 300px;
+    flex-direction: row;
+    gap: 2px;
+}
+
+body.theme-index .video-container video {
+    width: 33%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    body.theme-index * {
+        font-size: 14px;
+    }
+
+    body.theme-index .video-container {
+        animation: none;
+        margin: auto;
+        max-width: 80%;
+        gap: 2px;
+        margin-bottom: 50px;
+    }
+
+    body.theme-index {
+        max-width: 100%;
+        margin: 5px;
+    }
+}
+
+body.theme-index .bttn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: solid 2px white;
+    text-align: center;
+    height: auto;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body.theme-index .bttn:hover {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    color: white;
+    border-color: white;
+    border: solid 1px white;
+}
+
+body.theme-index .bttn-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border: solid 2px black;
+    text-align: center;
+    height: auto;
+    width: fit-content;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body.theme-index #loading-bar {
+    background: #FF5C35;
+}
+
+body.theme-index .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body.theme-index .loader {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
+body.theme-index .loader div {
+    width: 16px;
+    height: 16px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 50%;
+    animation: grow-shrink 1.5s infinite;
+}
+
+body.theme-index .loader div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+body.theme-index .loader div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+body.theme-index .loader div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes grow-shrink {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+body.theme-index .hero-content h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'marianne';
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body.theme-index h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'marianne';
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    animation: pulseblack 2s infinite;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body.theme-index h1:hover {
+    animation: spin 10s linear infinite, pulseblack 2s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulseblack {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 92, 53, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 92, 53, 0);
+    }
+}
+
+body.theme-index.dark-mode h1 {
+    border: 2px solid white;
+    animation: pulse 2s infinite;
+}
+
+body.theme-index.dark-mode h1:hover {
+    border: 2px solid white;
+    animation: pulse 2s infinite;
+    animation: spin 10s linear infinite, pulseblack 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 92, 53, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 92, 53, 0);
+    }
+}
+
+body.theme-index.dark-mode {
+    background-color: #1e1d1d;
+    color: #e0e0e0;
+}
+
+body.theme-index.dark-mode content {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.theme-index.dark-mode p {
+    color: #e0e0e0;
+}
+
+body.theme-index.dark-mode .welcome h2 {
+    color: #ffffff;
+}
+
+body.theme-index.dark-mode .bttn-2 {
+    border: solid 2px white;
+    color: white;
+}
+
+body.theme-index .section-noise {
+    position: relative;
+    overflow: hidden;
+    height: 700px;
+}
+
+body.theme-index #tv-noise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+body.theme-index .animation {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================================
+   7) PAGES TUTORIELS — <body class="theme-tuto">
+   (tuto, kickflip, ollie, shove, materiel, quisuisje, wakepark)
+   ========================================================================= */
+body.theme-tuto {
+    overflow: scroll;
+    font-family: 'marianne';
+    line-height: 1.6;
+    color: #2f2e2e;
+    background-color: #E5E4E4;
+}
+
+body.theme-tuto #loading-bar {
+    background: rgba(241, 124, 28, 0.83);
+}
+
+body.theme-tuto .separator {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(98, 98, 98);
+    margin: 40px auto;
+    border-radius: 1px;
+}
+
+body.theme-tuto .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 4fr;
+    gap: 20px;
+    align-items: start;
+    text-align: start;
+    justify-content: flex-start;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+body.theme-tuto .grid-item:nth-child(1) {
+    text-align: start;
+    justify-content: flex-start;
+    width: 250px;
+}
+
+body.theme-tuto .grid-item i {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+body.theme-tuto .grid-item:nth-child(2) {
+    text-align: end;
+}
+
+body.theme-tuto .grid-item:nth-child(3) {
+    text-align: start;
+    font-size: 13px;
+}
+
+body.theme-tuto .grid-item:nth-child(4) {
+    text-align: start;
+    font-size: 13px;
+}
+
+body.theme-tuto .grid-item p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+body.theme-tuto .grid-item a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+body.theme-tuto .grid-item a:hover {
+    background-color: seashell;
+    width: 100px;
+    height: 80px;
+}
+
+body.theme-tuto .color-container {
+    z-index: -2;
+    width: 100%;
+    padding: 20px;
+}
+
+body.theme-tuto .color-container::before {
+    content: "";
+    position: absolute;
+    top: 900px;
+    left: 0;
+    width: 50%;
+    height: 400px;
+    background-color: rgba(241, 124, 28, 0.83);
+    z-index: -1;
+}
+
+body.theme-tuto .color-container__2 {
+    z-index: -2;
+    width: 100%;
+    padding: 20px;
+}
+
+body.theme-tuto .color-container__2::before {
+    content: "";
+    position: absolute;
+    top: 1850px;
+    width: 50%;
+    height: 400px;
+    background-color: rgba(241, 124, 28, 0.83);
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    body.theme-tuto .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body.theme-tuto .grid-item:nth-child(1),
+    body.theme-tuto .grid-item:nth-child(4) {
+        display: none;
+    }
+
+    body.theme-tuto .color-container__2::before {
+        left: 100px;
+    }
+}
+
+
+/* =========================================================================
+   8) HERO ROTATE — <body class="theme-rotate">
+   (wakepark, materiel, tuto, quisuisje)
+   Wrapper .container centré + effet machine à écrire du h1.hero-section
+
+   La rotation/fondu au scroll était pilotée en JS (jQuery $(window).on('scroll'))
+   sur l'ancien .circular. Remplacé par une animation CSS pilotée par le
+   scroll (animation-timeline), sans JS : 0 → 300px de scroll = rotation
+   0 → 135deg et opacité 1 → 0 (mêmes valeurs que l'ancien calcul
+   rotationAngle = scrollPos * 0.45 / opacity = 1 - scrollPos / 300).
+   ========================================================================= */
+body.theme-rotate .container {
+    background-color: #E5E4E4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    animation-name: hero-scroll-fade;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root);
+    animation-range: 0 300px;
+}
+
+@keyframes hero-scroll-fade {
+    from {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: rotate(135deg);
+        opacity: 0;
+    }
+}
+
+body.theme-rotate h1.hero-section {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+
+/* =========================================================================
+   9) PAGE WAKEPARK — <body class="theme-wakepark">
+   (bandeau uniquement — l'effet machine à écrire du h1 est dans la section 8,
+   partagé avec tuto/materiel/quisuisje via theme-rotate)
+   ========================================================================= */
+body.theme-wakepark .bandeau {
+    background-image: url(../images/2140.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 50%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+body.theme-wakepark .content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+body.theme-wakepark .second-body {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    body.theme-wakepark .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    body.theme-wakepark .content {
+        padding: 10px;
+    }
+
+    body.theme-wakepark iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+/* =========================================================================
+   10) PAGE BLOG — <body class="theme-blog">
+   (liste des articles)
+   ========================================================================= */
+body.theme-blog {
+    font-family: 'marianne';
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+body.theme-blog footer {
+    min-height: 100px;
+}
+
+body.theme-blog .customButton a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+body.theme-blog .article-section p,
+body.theme-blog .article-section ul,
+body.theme-blog .article-section h3,
+body.theme-blog .article-section h2 {
+    margin: 20px;
+}
+
+body.theme-blog .color-container {
+    position: relative;
+    z-index: -2;
+    width: 100%;
+    padding: 20px;
+}
+
+body.theme-blog .color-container::before {
+    content: "";
+    position: absolute;
+    left: 500px;
+    width: 15%;
+    height: 60px;
+    background-color: rgba(241, 124, 28, 0.83);
+    z-index: -1;
+}
+
+@media screen and (max-width: 900px) {
+    body.theme-blog .color-container::before {
+        top: 800px;
+        width: 60%;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body.theme-blog .color-container::before {
+        top: 800px;
+        width: 60%;
+        height: 800px;
+    }
+}
+
+body.theme-blog .article-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+body.theme-blog .article-card img {
+    width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+body.theme-blog .article-card {
+    display: block;
+    text-align: center;
+}
+
+body.theme-blog .article-section {
+    padding: 20px;
+    margin: 20px 20px auto;
+}
+
+body.theme-blog .article-section h2 {
+    font-family: 'brockmann';
+    text-align: center;
+    margin-top: 20px;
+}
+
+body.theme-blog .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+@media screen and (max-width: 1000px) {
+    body.theme-blog .article-section {
+        padding: 5px;
+        margin: 5px 5px auto;
+    }
+
+    body.theme-blog .info {
+        flex-direction: row;
+        display: flex;
+        font-size: 7px;
+        gap: 5px;
+    }
+}
+
+body.theme-blog .section-tuto {
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+body.theme-blog .separator {
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px 0;
+}
+
+body.theme-blog .bandeau {
+    color: black;
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+    cursor: pointer;
+}
+
+@keyframes pulseWhite {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+body.theme-blog #dark-mode-toggle {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+body.theme-blog #dark-mode-toggle:focus {
+    outline: none;
+}
+
+body.theme-blog .bandeau h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'marianne';
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    animation: pulse-blog 2s infinite;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+}
+
+@keyframes pulse-blog {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+body.theme-blog .section {
+    position: relative;
+    padding: 30px 20px;
+}
+
+body.theme-blog .section.animate {
+    animation: parallax 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes parallax {
+    from {
+        transform: translateY(40px);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================================
+   11) PAGES "ARTICLE" — <body class="theme-article">
+   (bases-du-wakeskate-guide-pour-debutants, mon-retour-sur-la-progression,
+   championnats2025, comment-choisir-son-wakeskate-en-2026,
+   quesque-le-wakeskate)
+
+   Les deux dernières ajoutent aussi la classe "theme-article-table" (tableau
+   comparatif). quesque-le-wakeskate ajoute en plus "theme-quesque".
+   championnats2025 ajoute en plus "theme-championnats" (couleur du
+   loading-bar).
+   ========================================================================= */
+body.theme-article {
+    font-family: 'marianne';
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+body.theme-article .article-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+body.theme-article .article-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+body.theme-article .article-section p,
+body.theme-article .article-section h1,
+body.theme-article .article-section h2 {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+body.theme-article .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+@media screen and (max-width: 1000px) {
+    body.theme-article .article-section {
+        padding: 5px;
+        margin: 5px 5px auto;
+    }
+
+    body.theme-article .info {
+        flex-direction: row;
+        display: flex;
+        font-size: 7px;
+        gap: 5px;
+    }
+}
+
+body.theme-article .section-tuto {
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+body.theme-championnats #loading-bar {
+    background: #FF5C35;
+}
+
+/* Variante avec tableau comparatif (comment-choisir, quesque-le-wakeskate) */
+body.theme-article-table .article-card h3 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+body.theme-article-table .article-section p,
+body.theme-article-table .article-section h1,
+body.theme-article-table .article-section h2,
+body.theme-article-table .article-section h3,
+body.theme-article-table table {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+body.theme-article-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+body.theme-article-table caption {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+body.theme-article-table th,
+body.theme-article-table td {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+body.theme-article-table thead {
+    background-color: #f0f0f0;
+}
+
+body.theme-article-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+body.theme-quesque .article-card h1 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+
+/* =========================================================================
+   12) PAGE 404 — <body class="theme-404">
+   ========================================================================= */
+body.theme-404 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* =========================================================================
+   13) MENTIONS LÉGALES — <body class="theme-mentions">
+   ========================================================================= */
+body.theme-mentions {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    overflow: scroll;
+}
+
+body.theme-mentions .bandeau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('../images/354892856_a2518bbe-df23-4f14-b471-78893ef5f227.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: monAnimation 1s ease-out;
+}
+
+@keyframes monAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body.theme-mentions .bandeau {
+        height: 150px;
+    }
+
+    body.theme-mentions h1 {
+        font-size: 1.8em;
+    }
+}
+
+body.theme-mentions h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+body.theme-mentions h2 {
+    color: #2c3e50;
+}
+
+body.theme-mentions a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+body.theme-mentions a:hover {
+    text-decoration: underline;
+}
+
+body.theme-mentions .section {
+    margin: 10px;
+    margin-bottom: 30px;
+    color: black;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border-left: 4px solid #2c3e50;
+}
+
+
+/* =========================================================================
+   14) POLITIQUE DE CONFIDENTIALITÉ — <body class="theme-politique">
+   ========================================================================= */
+body.theme-politique {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    margin: 20px;
+    max-width: 100%;
+    background-color: #f9f9f9;
+}
+
+body.theme-politique .container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+body.theme-politique h1,
+body.theme-politique h2 {
+    color: #2c3e50;
+}
+
+body.theme-politique h1 {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+}
+
+body.theme-politique a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+body.theme-politique a:hover {
+    text-decoration: underline;
+}

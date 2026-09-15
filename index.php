@@ -1,7 +1,7 @@
 <?php
 
-require_once '../wake-skate.fr/back-end/contactBe.php';
-require_once '../wake-skate.fr/back-end/newsletter.php';
+require_once 'back-end/contactBe.php';
+require_once 'back-end/newsletter.php';
 
 ?>
 
@@ -47,13 +47,8 @@ require_once '../wake-skate.fr/back-end/newsletter.php';
 
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/consent.css">
-
-    <link rel="stylesheet" href="../styles/animation.css">
+    <link rel="stylesheet" href="../styles/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/footer.css">
 
 
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="96965f7a-182e-4f18-aa42-ae4a90edcf9a" data-blockingmode="auto" type="text/javascript"></script>
@@ -96,172 +91,7 @@ require_once '../wake-skate.fr/back-end/newsletter.php';
 
     gtag('config', 'G-27ZTXGK330');
 </script>
-<style>
-    @font-face {
-        font-family: 'marianne';
-        src: url(font/Marianne-Regular.woff2) format('woff2');
-        font-display: swap;
-
-    }
-
-
-
-
-    body {
-        color: #2f2e2e;
-        font-family: 'marianne';
-        overflow-x: hidden;
-        max-width: 100%;
-        background-color: #E5E4E4;
-        color: #102837;
-        font-weight: 200;
-
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    .grid-item a {
-        text-decoration: none;
-        color: #2a2a2a;
-        cursor: pointer;
-    }
-
-    .form-note a {
-        text-decoration: none;
-        color: #ffffff;
-        cursor: pointer;
-    }
-
-    .form-note p {
-        font-size: 1.2em;
-    }
-
-
-
-
-
-    #modal {
-        z-index: 1000;
-
-    }
-
-    #modal input {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    #toggle-modal {
-        cursor: pointer;
-    }
-
-    #modal button {
-        background-color: rgb(33, 34, 33);
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        margin: auto;
-        display: block;
-    }
-
-    @media screen and (max-width: 1200px) {
-        .brockmanTitle p a {
-            font-size: 25px;
-        }
-
-        .brockmanTitle {
-            max-width: 100%;
-        }
-
-    }
-
-    .color-container {
-        z-index: -2;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .color-container::before {
-        content: "";
-        position: absolute;
-        top: 900px;
-        left: 0;
-        width: 50%;
-        /* couleur sur 50% seulement */
-        height: 400px;
-        background-color: rgba(241, 124, 28, 0.83);
-        z-index: -1;
-        /* derrière le contenu */
-
-    }
-
-    @media screen and (max-width: 900px) {
-        .color-container::before {
-            top: 800px;
-            width: 60%;
-            height: 500px;
-        }
-
-    }
-
-    @media screen and (max-width: 600px) {
-        .color-container::before {
-            top: 800px;
-            width: 60%;
-            height: 800px;
-        }
-
-    }
-
-    footer {
-
-        position: relative;
-        bottom: 0;
-        max-width: 100%;
-        min-height: 100px;
-        background-color: #f4f4f4;
-        text-align: center;
-        font-size: 14px;
-    }
-
-    footer a {
-        color: #212221;
-        text-decoration: none;
-        margin: 0 10px;
-    }
-
-    footer ul li {
-        list-style: none;
-    }
-
-
-    footer a:hover {
-        text-decoration: underline;
-    }
-
-    .icon-footer {
-        margin-top: 10px;
-    }
-
-    .icon-footer {
-        color: white;
-        margin: 0 10px;
-        transition: color 0.3s;
-    }
-
-    .icon:hover {
-        color: rgba(255, 106, 0, 0.951);
-    }
-</style>
-
-<body id="dark-mode">
+<body id="dark-mode" class="theme-index">
 
 
 

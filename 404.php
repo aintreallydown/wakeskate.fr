@@ -1,5 +1,5 @@
 <?php
-require_once '../wake-skate.fr/elements/header.php';
+require_once 'elements/header.php';
 
 ?>
 
@@ -9,19 +9,11 @@ require_once '../wake-skate.fr/elements/header.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/app.css">
     <title>404</title>
 </head>
-<style>
-    footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-</style>
 
-<body>
+<body class="theme-404">
     <h1>404 - Page Not Found</h1>
     <p>Oups,
         la page que vous cherchez n'existe pas</p>

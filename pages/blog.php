@@ -6,10 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../styles/footer.css" type='text/css'>
-    <link rel="stylesheet" href="../styles/consent.css" type='text/css'>
-    <link  rel='stylesheet' href='../styles/header.css' type='text/css'>
-    <link rel="stylesheet" href="../styles/main.css"  type='text/css'>
+    <link rel="stylesheet" href="../styles/app.css">
     
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
@@ -21,122 +18,8 @@
 
     <title>Blog sur le wakeskate</title>
 </head>
-<style>
-    @font-face {
-        font-family: 'marianne';
-        src: url(../font/Marianne-Regular.woff2) format('woff2');
 
-    }
-
-    * {
-        font-family: 'marianne';
-    }
-
-    .customButton a {
-        display: inline-block;
-        padding: 10px 20px;
-        color: black;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
-
-    }
-
-    
-
-
-
-    body {
-        font-family: 'marianne';
-        line-height: 1.6;
-        background-color: #f4f4f4;
-        color: black;
-    }
-
-
-
-    .article-section p,
-    .article-section ul,
-    .article-section h3,
-    .article-section h2 {
-        margin: 20px;
-    }
-    .color-container {
-    position: relative;
-    z-index: -2;
-    width: 100%;
-    padding: 20px;
-}
-.color-container::before{
-    content: "";
-    position: absolute;
-    top: Opx;
-    left: 500px;
-    width: 15%; /* couleur sur 50% seulement */
-    height: 60px;
-    background-color: rgba(241, 124, 28, 0.83);
-    z-index: -1; /* derrière le contenu */
-
-}
-@media screen and (max-width: 900px) {
-    .color-container::before{
-        top: 800px;
-        width: 60%;
-        height: 500px;
-    }
-    
-}
-@media screen and (max-width: 600px) {
-    .color-container::before{
-        top: 800px;
-        width: 60%;
-        height: 800px;
-    }
-    
-}
-
-footer {
-
-position: relative;
-bottom: 0;
-max-width: 100%;
-min-height: 100px;
-background-color: #f4f4f4;
-text-align: center;
-font-size: 14px;
-}
-
-footer a {
-color: #212221;
-text-decoration: none;
-margin: 0 10px;
-}
-
-footer ul li{
-    list-style: none;
-}
-
-
-footer a:hover {
-text-decoration: underline;
-}
-
-.icon-footer {
-margin-top: 10px;
-}
-
-.icon-footer {
-color: white;
-margin: 0 10px;
-transition: color 0.3s;
-}
-
-.icon:hover {
-color: rgba(255, 106, 0, 0.951);
-}
-</style>
-
-<body id="dark-mode">
+<body id="dark-mode" class="theme-blog">
 
 
     <div class="bandeau" id="dark-mode-toggle">

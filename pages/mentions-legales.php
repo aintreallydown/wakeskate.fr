@@ -5,8 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/app.css">
 
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
@@ -18,66 +17,8 @@
     
     <title>Mentions Légales & CGU - wake-skate.fr</title>
 </head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.7;
-        padding: 20px;
-        max-width: 100%;
-        background-color: #f9f9f9;
-        overflow: scroll;
-    }
 
-    .bandeau {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-        background-image: url('../images/354892856_a2518bbe-df23-4f14-b471-78893ef5f227.jpg');
-        background-size: cover;
-        background-position: center;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        animation: monAnimation 1s ease-out;
-    }
-
-    @keyframes monAnimation {
-        0% { opacity: 0; transform: translateY(-20px); }
-        100% { opacity: 1; transform: translateY(0); }
-    }
-
-    @media screen and (max-width: 768px) {
-        .bandeau { height: 150px; }
-        h1 { font-size: 1.8em; }
-    }
-
-    h1 {
-        font-size: 2.5em;
-        color: #2c3e50;
-        border-bottom: 2px solid #2c3e50;
-        padding-bottom: 10px;
-        text-align: center;
-        padding: 20px;
-        margin-top: 30px;
-    }
-
-    h2 { color: #2c3e50; }
-
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .section {
-        margin: 10px;
-        margin-bottom: 30px;
-        color: black;
-        padding: 20px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        border-left: 4px solid #2c3e50;
-    }
-</style>
-
-<body>
+<body class="theme-mentions">
     <header class="sticky-nav">
         <div class="row">
             <a class="logo" href="/">W/S</a>

@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/app.css">
 
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
@@ -17,44 +16,9 @@
     
     <title>Politique de Confidentialité - wake-skate.fr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.7;
-            margin: 20px;
-            max-width: 100%;
-            background-color: #f9f9f9;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-        }
-
-        h1,
-        h2 {
-            color: #2c3e50;
-        }
-
-        h1 {
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 10px;
-        }
-
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 
-<body>
+<body class="theme-politique">
     <header class="sticky-nav">
         <div class="row">
             <a class="logo" href="/">W/S</a>
