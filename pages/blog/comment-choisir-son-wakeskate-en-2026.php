@@ -8,7 +8,7 @@
     <!-- Font Awesome CDN (version 5 ou 6 selon ce que tu utilises) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Lien vers le fichier CSS -->
-    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="stylesheet" href="../../styles/app.css">
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
     
@@ -17,20 +17,20 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Mon retour sur la progression en wakeskate</title>
+    <title>Comment choisir son wakeskate en 2026 ?</title>
 </head>
 
 
 <body class="theme-article theme-article-table">
      <?php 
-    require_once '../elements/navigation.php';
+    require_once '../../elements/navigation.php';
     ?>
 
     <div class="article-section">
 
         <div class="articles-container">
             <div class="article-card">
-                <img src="../images/planche.jpg" alt="Article Image">
+                <img src="../../images/planche.jpg" alt="Article Image">
                 <h1>Comment choisir son wakeskate en 2026 ? </h1>
             </div>
 
@@ -157,29 +157,17 @@
         <div class="section-tuto">
             <h2>Vous aimerez aussi :</h2>
             <ul>
-                <li><a href="/les-bases-du-wakeskate-guide-pour-debutants">Les bases du wakeskate : Guide pour débutants</a></li>
+                <li><a href="/bases-du-wakeskate-guide-pour-debutants">Les bases du wakeskate : Guide pour débutants</a></li>
                 <li><a href="/#">Techniques avancées en wakeskate : Trucs et astuces</a></li>
                 <li><a href="/#">Entretien de sa planche de wakeskate : Conseils pratiques</a></li>
             </ul>
         </div>
     </div>
-    <footer>
-        <ul>
-
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/tuto">Tutoriel</a></li> 
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/mentions-legales">Mentions légales & CGU</a></li> 
-            <li><button type="button" id="change-preferences"
-                style=" bottom: 20px; right: 20px; cursor:pointer; background: none; border: none; color:#212221; text-decoration: none; font-size: 1em; padding: 0; font-family: 'marianne';">
-                Modifier mes préférences
-            </button></li> 
-        </ul>
-        </footer>
+    <?php require_once '../../elements/footer.php'; ?>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <script src="../js/header.js">
+    <script src="../../js/header.js">
     </script>
      
 

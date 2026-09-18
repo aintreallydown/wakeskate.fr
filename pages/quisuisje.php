@@ -21,10 +21,10 @@ require_once '../back-end/contactBe.php';
 
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
-    
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4810298741612120"
-     crossorigin="anonymous"></script>
-    
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
@@ -40,68 +40,67 @@ require_once '../back-end/contactBe.php';
     <div id="loading-bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100">
         <div id="loading-bar"></div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div>
             <h1 class="hero-section">W<i>A</i>KESK<i>A</i>TE • PRESENT<i>A</i>TION</h1>
         </div>
-    </div>
+    </div> -->
 
-    <?php 
+    <?php
     require_once '../elements/navigation.php';
     ?>
 
     <div class="color-container">
         <div class="grid-container">
-             <div class="grid-item">
+            <div class="grid-item">
                 <h1>Q&A</h1>
             </div>
             <div class="grid-item">
                 <p>INTRO</p>
-             </div>
-            <div class="grid-item">
-            <p>Découvrez l'univers passionnant de Driss Benkirane, opérateur wakeboard et rider passionné. Dans
-            cette
-            interview exclusive, Driss partage son parcours, ses défis actuels, ses sources d'inspiration et ses
-            aspirations futures dans le monde du wakeskate. Plongez dans son histoire et laissez-vous inspirer
-            par
-            sa passion pour ce sport unique.</p>
             </div>
             <div class="grid-item">
-            <p>Interview du bloggueur
+                <p>Découvrez l'univers passionnant de Driss Benkirane, opérateur wakeboard et rider passionné. Dans
+                    cette
+                    interview exclusive, Driss partage son parcours, ses défis actuels, ses sources d'inspiration et ses
+                    aspirations futures dans le monde du wakeskate. Plongez dans son histoire et laissez-vous inspirer
+                    par
+                    sa passion pour ce sport unique.</p>
+            </div>
+            <div class="grid-item">
+                <p>Interview du bloggueur
                 </p>
             </div>
         </div>
     </div>
-        <div class="grid-container">
-             <div class="grid-item">
-                <p>01.</p>
-            </div>
-            <div class="grid-item">
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>01.</p>
+        </div>
+        <div class="grid-item">
             <p>Pourriez-vous nous parler un peu de vous ?</p>
-             </div>
-            <div class="grid-item">
+        </div>
+        <div class="grid-item">
             <p>Bien, bonjour, je m'appelle
                 Driss, je suis operateur wakeboard au teleski nautique de Verberie, j'ai 32 ans, Je suis
                 Goofy, j'ai commencé la pratique du ski nautique à l'age de 12 ans au Maroc, j'ai ensuite
                 pratiqué le wakeboard en bateau et puis le wakeskate m'a paru comme une évidence, moi qui
                 venais du skateboard classic. Aujourd'hui je ne ride plus en bateau mais en cable, depuis 6
                 ans maintenant, partout en France, j'alterne entre wakeboard et wakeskate.</p>
-            </div>
-            <div class="grid-item">
-            <p>et ça continue..
-                </p>
-            </div>
         </div>
+        <div class="grid-item">
+            <p>et ça continue..
+            </p>
+        </div>
+    </div>
 
-        <div class="color-container__2">
-        <div class="grid-container">
-             <div class="grid-item">
-                <p>02.</p>
-            </div>
-            <div class="grid-item">
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>02.</p>
+        </div>
+        <div class="grid-item">
             <p>Quel est votre plus grand défi actuellement ?</p>
-             </div>
-            <div class="grid-item">
+        </div>
+        <div class="grid-item">
             <p>En ce moment, je prépare les
                 championnat de France 2025 de wakeskate, cela va faire ma troisiemme competition wakeskate
                 en cable. L'aventure est enorme, je suis quelqu'un qui peux se mettre la pression pour rien
@@ -110,64 +109,64 @@ require_once '../back-end/contactBe.php';
                 quelque chose le jour J. Pour pouvoir proposé quelque chose de coherent et régulier. Je vois
                 la competition comme le résultat d'un travail d'acharnement, généralement c'est à ce moment
                 qu'on voit si on a vraiment progressé. </p>
-            </div>
-            <div class="grid-item">
+        </div>
+        <div class="grid-item">
             <p>
-                </p>
-            </div>
+            </p>
         </div>
+    </div>
+    </div>
+    <div class="grid-container ">
+        <div class="grid-item">
+            <p>03.</p>
         </div>
-        <div class="grid-container ">
-             <div class="grid-item">
-                <p>03.</p>
-            </div>
-            <div class="grid-item">
+        <div class="grid-item">
             <p>Qu'est-ce qui vous inspire au quotidien ?</p>
-             </div>
-            <div class="grid-item">
+        </div>
+        <div class="grid-item">
             <p>Je peux être inspirer par pleins de
                 choses, en générale, l'environnement en lui meme est une source d'inspiration pour moi, mais
                 aussi les copains et les bon moments passé ensemble sur l'eau et aprés. C'est quelque chose
                 qui va me permettre de m'épanouir et donc de me sentir bien aussi sur ma planche.</p>
-            </div>
-            <div class="grid-item">
-            <p>
-                </p>
-            </div>
         </div>
-        <div class="grid-container">
-             <div class="grid-item">
-                <p>05.</p>
-            </div>
-            <div class="grid-item">
+        <div class="grid-item">
+            <p>
+            </p>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>05.</p>
+        </div>
+        <div class="grid-item">
             <p>Où vous voyez-vous dans cinq ans ?</p>
-             </div>
-            <div class="grid-item">
+        </div>
+        <div class="grid-item">
             <p>Dans cinq ans ? hahaha, je sais pas
                 répondre à cette question, personne sait de quoi la vie est faite, mais j'espere que je
                 serai sur l'eau encore a vouloir progressé et continuer de partager des moments
                 inoubliables. </p>
-            </div>
-            <div class="grid-item">
-            <p>
-                </p>
-            </div>
         </div>
-        <div class="grid-container">
-             <div class="grid-item">
-                <p>06.</p>
-            </div>
-            <div class="grid-item">
+        <div class="grid-item">
+            <p>
+            </p>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>06.</p>
+        </div>
+        <div class="grid-item">
             <p>Un dernier mot pour nos lecteurs ?</p>
-             </div>
-            <div class="grid-item">
+        </div>
+        <div class="grid-item">
             <p>Un dernier mot ? faite du wakeskate </p>
-            </div>
-            <div class="grid-item">
+        </div>
+        <div class="grid-item">
             <p>The wakeskate blog -
-                </p>
-            </div>
-</div>
+            </p>
+        </div>
+    </div>
 
 
 
@@ -176,19 +175,7 @@ require_once '../back-end/contactBe.php';
 
 
 
-    <footer>
-        <ul>
-
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/tuto">Tutoriel</a></li> 
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/mentions-legales">Mentions légales & CGU</a></li> 
-            <li><button type="button" id="change-preferences"
-                style=" bottom: 20px; right: 20px; cursor:pointer; background: none; border: none; color:#212221; text-decoration: none; font-size: 1em; padding: 0; font-family: 'marianne';">
-                Modifier mes préférences
-            </button></li> 
-        </ul>
-        </footer>
+    <?php require_once '../elements/footer.php'; ?>
 
 
     <script>
@@ -209,7 +196,7 @@ require_once '../back-end/contactBe.php';
     </script>
 
     <script src="../js/header.js"></script>
-     
+
     <script src="../js/responsive.js"></script>
 
 

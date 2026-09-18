@@ -1,32 +1,33 @@
-<?php
-require_once 'elements/header.php';
-
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/app.css">
-    <title>404</title>
+    <link rel="stylesheet" href="/styles/app.css">
+    <title>404 - Page introuvable</title>
 </head>
 
 <body class="theme-404">
-    <h1>404 - Page Not Found</h1>
-    <p>Oups,
-        la page que vous cherchez n'existe pas</p>
-    <a href="/">Retour à la page d'acceuil</a>
+    <?php require_once 'elements/navigation.php'; ?>
 
-    <footer>
-        <p>&copy;
-            2025 wake-skate.Fr. All rights reserved.</p><a href="/">Accueil</a>| <a href="/tuto">Tutoriel</a>| <a
-            href="/contact">Contact</a>| <div class="icon-footer"><a
-                href="https://www.instagram.com/drissbnkiran?igsh=MWpsaTBqNjlsc2EycQ==" target="_blank"
-                rel="noopener"><i class="fab fa-instagram fa-2x icon"></i></a></div>
-    </footer>
-    <script src="../js/header.js"></script>
+    <main class="error-404">
+        <div class="error-404__text">
+            <p class="eyebrow">FIG. 404 — PAGE INTROUVABLE</p>
+            <h1>404</h1>
+            <p class="lead">Oups, la page que vous cherchez n'existe pas.</p>
+            <p>Elle a peut-être été déplacée, renommée, ou n'a jamais existé. Pendant ce temps, voici le schéma
+                d'un wakeskate.</p>
+            <a class="error-404__cta" href="/">Retour à la page d'accueil</a>
+        </div>
+        <figure class="error-404__image">
+            <img src="/images/schema.png" alt="Schéma technique d'un wakeskate, vue de dessus et vue de profil">
+            <figcaption>Le seul schéma qu'on ait sous la main.</figcaption>
+        </figure>
+    </main>
+
+    <?php require_once 'elements/footer.php'; ?>
+    <script src="/js/header.js"></script>
 </body>
 
 </html>

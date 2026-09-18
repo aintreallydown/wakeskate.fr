@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="stylesheet" href="../../styles/app.css">
 
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
@@ -19,34 +19,7 @@
 </head>
 
 <body class="theme-mentions">
-    <header class="sticky-nav">
-        <div class="row">
-            <a class="logo" href="/">W/S</a>
-            <div class="mobile-toggle"><span></span><span></span><span></span></div>
-            <nav>
-                <ul>
-                    <li><a href="/blog">Blog</a></li>
-                    <li class="desktop"><a href="/tuto">Tutoriel</a></li>
-                    <li class="has-submenu">
-                        <a href="/tuto" class="submenu-toggle">Tutoriel</a>
-                        <ul class="submenu">
-                            <li><a href="/ollie">Ollie</a></li>
-                            <li><a href="/shove">Pop shuv</a></li>
-                            <li><a href="/kickflip">Kickflip</a></li>
-                            <li class="submenu-close">
-                                <a href="#" class="close-submenu">
-                                    <i class="fas fa-chevron-down"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="/wakepark">Wakepark</a></li>
-                    <li><a href="/materiel">Matériel</a></li>
-                    <li><a href="/quisuisje">Qui suis-je</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <?php require_once '../../elements/navigation.php'; ?>
 
 
     <!-- ===================== MENTIONS LÉGALES ===================== -->
@@ -193,22 +166,9 @@
     </p>
     <br>
 
-    <footer>
-        <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/tuto">Tutoriel</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/mentions-legales">Mentions légales & CGU</a></li>
-            <li>
-                <button type="button" id="change-preferences"
-                    style="bottom: 20px; right: 20px; cursor:pointer; background: none; border: none; color:#212221; text-decoration: none; font-size: 1em; padding: 0; font-family: 'marianne';">
-                    Modifier mes préférences
-                </button>
-            </li>
-        </ul>
-    </footer>
+    <?php require_once '../../elements/footer.php'; ?>
 
-    <script src="../js/header.js"></script>
+    <script src="../../js/header.js"></script>
      
 </body>
 

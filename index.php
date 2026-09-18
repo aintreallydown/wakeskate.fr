@@ -1,7 +1,7 @@
 <?php
 
-require_once 'back-end/contactBe.php';
-require_once 'back-end/newsletter.php';
+// require_once 'back-end/contactBe.php';
+// require_once 'back-end/newsletter.php';
 
 ?>
 
@@ -103,41 +103,9 @@ require_once 'back-end/newsletter.php';
 
 
 
-    <nav class="sticky-nav">
-        <div class="row">
-            <a class="logo" href="/" style="color: #212221; text-decoration:none;">W<i style="font-size: inherit;
-                line-height: inherit;">A</i>KESKATE
-            </a>
-            <div class="mobile-toggle"><span></span><span></span><span></span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/blog">Blog</a></li>
-                    <li class="desktop"><a href="/tuto">Tutoriel</a></li>
-                    <li class="has-submenu">
-                        <a href="/tuto" class="submenu-toggle">Tutoriel</a>
-                        <ul class="submenu">
-                            <li><a href="/ollie">Ollie</a></li>
-                            <li><a href="/shove">Pop shuv</a></li>
-                            <li><a href="/kickflip">Kickflip</a></li>
-                            <!-- Chevron pour fermer -->
-                            <li class="submenu-close">
-                                <a href="#" class="close-submenu">
-                                    <i class="fas fa-chevron-down"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="/wakepark">Wakepark</a></li>
-                    <li><a href="/materiel">Matériel</a></li>
-                    <li><a href="/quisuisje">À propos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </nav>
+    <?php require_once 'elements/navigation.php'; ?>
 
-    <br /><br />
-    <div id="modal"
+    <!-- <div id="modal"
         style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.5);">
         <div
             style="background: white; padding: 20px; border-radius: 8px; width: 90%; max-width: 400px; margin: 100px auto; position: relative;">
@@ -157,18 +125,6 @@ require_once 'back-end/newsletter.php';
                         class="fas fa-paper-plane"></i></button>
 
             </form>
-        </div>
-    </div>
-
-    <!-- <div class="hero-section">
-        <div class="hero-sub-container">
-            <div class="hero-sub bounce"><a href="/mon-retour-sur-la-progression-en-wakeskate" class="hero-link"></a></div>
-            <div class="hero-sub bounce"><a href="/kickflip" class="hero-link"></a></div>
-            <div class="hero-sub bounce"><a href="/blog" class="hero-link"></a></div>
-        </div>
-
-        <div class="custom__shape">
-
         </div>
     </div> -->
 
@@ -190,7 +146,7 @@ require_once 'back-end/newsletter.php';
 
         <div class="grid-container">
             <div class="grid-item">
-                <p>07.</p>
+                <p>01.</p>
             </div>
             <div class="grid-item">
                 <a href="/blog">
@@ -259,7 +215,7 @@ require_once 'back-end/newsletter.php';
         </div>
     </div>
     <div class="separator"></div>
-    <div class="video-container">
+    <!-- <div class="video-container">
 
         <video class="lazy-video" data-src="../video/taktak-270-blind.mov" autoplay muted loop preload="auto"></video>
         <video class="lazy-video" data-src="../video/frontboard-pipe-noir.mov" autoplay muted loop
@@ -267,8 +223,8 @@ require_once 'back-end/newsletter.php';
         <video class="lazy-video" data-src="../video/kickflip.mov" autoplay muted loop preload="auto"></video>
 
 
-    </div>
-    <div class="form-container">
+    </div> -->
+    <div class="form-container" id="contact">
         <h2>Vous avez pas instagram ? Contactez moi ici <i class="fa-solid fa-arrow-right"></i><br /><br /> Ou sinon, par là...<br /><a href="https://www.instagram.com/drissbnkiran?igsh=MWpsaTBqNjlsc2EycQ==" target="_blank"
                 rel="noopener"><i class="fab fa-instagram fa-2x icon"></i>
 
@@ -304,19 +260,10 @@ require_once 'back-end/newsletter.php';
         </div>
     </div>
 
-    <footer>
-        <ul>
-
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/tuto">Tutoriel</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/mentions-legales">Mentions légales & CGU</a></li>
-
-        </ul>
-    </footer>
+    <?php require_once 'elements/footer.php'; ?>
 
 
-    <script>
+    <!-- <script>
         // modal newsletter
         const modal = document.getElementById('modal');
         const toggleModal = document.getElementById('toggle-modal');
@@ -332,13 +279,12 @@ require_once 'back-end/newsletter.php';
                 modal.style.display = 'none';
             }
         });
-    </script>
+    </script> -->
 
 
 
 
     <script src="../js/header.js"></script>
-
     <script src="../js/lazyVideo.js"></script>
     <script src="../js/scrollAnimationBounceUp.js"></script>
 

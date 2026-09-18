@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="stylesheet" href="../../styles/app.css">
 
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
@@ -24,7 +24,7 @@
 <body class="theme-tuto">
 
      <?php 
-    require_once '../elements/navigation.php';
+    require_once '../../elements/navigation.php';
     ?>
 
 
@@ -98,19 +98,7 @@ de celle-ci pour plus d’équilibre.</p>
 
 
    
-    <footer>
-        <ul>
-
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/tuto">Tutoriel</a></li> 
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/mentions-legales">Mentions légales & CGU</a></li> 
-            <li><button type="button" id="change-preferences"
-                style=" bottom: 20px; right: 20px; cursor:pointer; background: none; border: none; color:#212221; text-decoration: none; font-size: 1em; padding: 0; font-family: 'marianne';">
-                Modifier mes préférences
-            </button></li> 
-        </ul>
-        </footer>
+    <?php require_once '../../elements/footer.php'; ?>
     <script>
         function loadYouTubeVideo(button) {
             const container = button.parentElement;
@@ -132,7 +120,7 @@ de celle-ci pour plus d’équilibre.</p>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <script src="../js/header.js"></script>
+    <script src="../../js/header.js"></script>
      
 
 

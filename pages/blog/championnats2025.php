@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="stylesheet" href="../../styles/app.css">
 
     <!-- google adsense -->
     <meta name="google-adsense-account" content="ca-pub-4810298741612120">
@@ -22,7 +22,7 @@
         <div id="loading-bar"></div>
     </div>
     <?php
-    require_once '../elements/navigation.php';
+    require_once '../../elements/navigation.php';
     ?>
 
 
@@ -31,8 +31,8 @@
 
         <div class="articles-container">
             <div class="article-card">
-                <img src="../images/IMG-20250706-WA0013.jpg" alt="Article Image">
-                <h3>Championnats de wakeboard & wakeskate - France 2025</h3>
+                <img src="../../images/IMG-20250706-WA0013.jpg" alt="Article Image">
+                <h1>Championnats de wakeboard & wakeskate - France 2025</h1>
             </div>
 
 
@@ -120,12 +120,9 @@
 
 
 
-            <!-- Deuxième section -->
-            <div class="article-card">
-                <img src="../images/IMG_20250709_175610_266.jpg" alt="Article Image">
-                <h3>Championnats de wakeboard & wakeskate - France 2025</h3>
-            </div>
-
+            <figure class="article-inline-image">
+                <img src="../../images/IMG_20250709_175610_266.jpg" alt="Championnats de France de wakeboard et wakeskate 2025">
+            </figure>
 
             <h1>L'evenement</h1>
             <p>En plus des compétitions, il y avait de nombreuses <strong>activités</strong> et
@@ -185,8 +182,8 @@
                 <h2>Vous aimerez aussi :</h2>
                 <p>(section à venir)</p>
                 <ul>
-                    <li><a href="/">Les bases du wakeskate : Guide pour débutants</a></li>
-                    <li><a href="/">Comment choisir sa planche de wakeskate ?</a></li>
+                    <li><a href="/bases-du-wakeskate-guide-pour-debutants">Les bases du wakeskate : Guide pour débutants</a></li>
+                    <li><a href="/comment-choisir-son-wakeskate-en-2026">Comment choisir sa planche de wakeskate ?</a></li>
                     <li><a href="/">Techniques avancées en wakeskate : Trucs et astuces</a></li>
                     <li><a href="/">Entretien de sa planche de wakeskate : Conseils pratiques</a></li>
                 </ul>
@@ -194,23 +191,13 @@
 
         </div>
     </div>
-    </div>
 
 
 
 
 
 
-    <footer>
-        <ul>
-
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/tuto">Tutoriel</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/mentions-legales">Mentions légales & CGU</a></li>
-
-        </ul>
-    </footer>
+    <?php require_once '../../elements/footer.php'; ?>
     <script>
         //progress bar
         document.addEventListener('DOMContentLoaded', () => {
@@ -231,7 +218,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <script src="../js/header.js"></script>
+    <script src="../../js/header.js"></script>
 
 </body>
 

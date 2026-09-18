@@ -26,11 +26,11 @@
     <div id="loading-bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100">
         <div id="loading-bar"></div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div>
             <h1 class="hero-section">W<i>A</i>KESK<i>A</i>TE • W<i>A</i>KEP<i>A</i>RK</h1>
         </div>
-    </div>
+    </div> -->
 
     <?php
     require_once '../elements/navigation.php';
@@ -154,16 +154,7 @@
         </div>
     </div>
 
-    <footer>
-        <ul>
-
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/tuto">Tutoriel</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/mentions-legales">Mentions légales & CGU</a></li>
-
-        </ul>
-    </footer>
+    <?php require_once '../elements/footer.php'; ?>
     <script>
         //progress bar
         document.addEventListener('DOMContentLoaded', () => {
