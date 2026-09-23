@@ -1,6 +1,6 @@
 <nav class="sticky-nav">
     <div class="row">
-        <a class="logo" href="/">W<i>A</i>KESKATE</a>
+        <a class="logo" href="/">W<i>A</i>KESKATE.fr</a>
         <div class="mobile-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="sidenav"
             aria-label="Menu"><span></span><span></span><span></span></div>
         <nav>
