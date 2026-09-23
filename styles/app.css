@@ -32,19 +32,19 @@
 
 /* =========================================================================
    0) COULEURS (variables globales)
-   Centralise la nouvelle charte (vert olive / orange-rouge / beige) pour
+   Centralise la charte "Braise" (brun presque noir / orange vif / crème) pour
    pouvoir la faire évoluer en un seul endroit à l'avenir.
    ========================================================================= */
 :root {
-    --color-primary: #f7e9c6;
-    --color-accent: #D9622B;
-    --color-bg: #f7e9c6;
-    --color-bg-alt: #E5E4E4;
-    --color-bg-muted: #EFE1C4;
-    --color-text: #37432B;
-    --color-text-dark: #102837;
-    --color-nav-footer-bg: #123B52;
-    --color-nav-footer-text: #F3E8D6;
+    --color-primary: #FAF0E4;
+    --color-accent: #FF6B35;
+    --color-bg: #FAF0E4;
+    --color-bg-alt: #EFE2D2;
+    --color-bg-muted: #F4E7D7;
+    --color-text: #2F2420;
+    --color-text-dark: #1C1410;
+    --color-nav-footer-bg: #2A1A14;
+    --color-nav-footer-text: #F7E6D3;
 }
 
 
@@ -191,8 +191,8 @@ html {
     border-radius: 14px;
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.08),
-        0 1px 2px rgba(16, 40, 55, 0.14),
-        0 12px 30px -10px rgba(16, 40, 55, 0.25);
+        0 1px 2px rgba(28, 20, 16, 0.14),
+        0 12px 30px -10px rgba(28, 20, 16, 0.25);
     /* "backwards" : le clip-path de l'animation ne reste pas appliqué et ne coupe pas l'ombre */
     animation: float-nav-reveal 0.85s var(--nav-ease) backwards;
     transition: max-width 0.5s cubic-bezier(0.34, 1.3, 0.64, 1),
@@ -207,8 +207,8 @@ html {
     border-color: rgba(243, 232, 214, 0.18);
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        0 1px 2px rgba(16, 40, 55, 0.14),
-        0 16px 36px -10px rgba(16, 40, 55, 0.3);
+        0 1px 2px rgba(28, 20, 16, 0.14),
+        0 16px 36px -10px rgba(28, 20, 16, 0.3);
 }
 
 .site-header.is-scrolled .float-nav {
@@ -281,7 +281,7 @@ html {
     transition: font-size 0.38s var(--nav-ease);
 }
 
-/* Icône sombre à l'origine : passée en crème pour ressortir sur le bleu */
+/* Icône sombre à l'origine : passée en crème pour ressortir sur le fond sombre */
 .logo-icon {
     width: 28px;
     height: 28px;
@@ -354,7 +354,7 @@ html {
     height: 2px;
     border-radius: 999px;
     background: var(--color-accent);
-    box-shadow: 0 1px 8px rgba(217, 98, 43, 0.65);
+    box-shadow: 0 1px 8px rgba(255, 107, 53, 0.65);
     transform: scaleX(0);
     transform-origin: left center;
     opacity: 0;
@@ -407,8 +407,8 @@ html {
     border-radius: 16px;
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.08),
-        0 1px 2px rgba(16, 40, 55, 0.14),
-        0 12px 30px -10px rgba(16, 40, 55, 0.25);
+        0 1px 2px rgba(28, 20, 16, 0.14),
+        0 12px 30px -10px rgba(28, 20, 16, 0.25);
     opacity: 0;
     visibility: hidden;
     transform: translate(-50%, -6px) scale(0.96);
@@ -479,7 +479,7 @@ html {
 .sidenav-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(16, 40, 55, 0.55);
+    background: rgba(28, 20, 16, 0.55);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -1155,6 +1155,113 @@ body.theme-index .brockmanTitle {
     width: max-content;
     margin: 20px auto;
     text-align: center;
+}
+
+/* Bandeau "Voir le tuto" : photo + appel vers le tuto ollie */
+body.theme-index .tuto-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 40px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding: 50px 40px;
+    background-color: var(--color-bg-muted);
+    border-radius: 30px;
+}
+
+body.theme-index .tuto-band-photo {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    max-width: 100%;
+}
+
+body.theme-index .tuto-band-photo::before {
+    content: '';
+    position: absolute;
+    top: 18%;
+    left: -40px;
+    width: 38%;
+    height: 55%;
+    background: var(--color-bg-alt);
+    border-radius: 0 30px 30px 0;
+}
+
+body.theme-index .tuto-band-photo img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 26px;
+}
+
+body.theme-index .tuto-band-content h3 {
+    font-family: 'brockmann', 'marianne', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    color: var(--color-text-dark);
+}
+
+body.theme-index .tuto-band-content p {
+    max-width: 42ch;
+    margin-bottom: 24px;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--color-text);
+}
+
+body.theme-index .tuto-band-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background-color: var(--color-accent);
+    /* texte foncé : le blanc manque de contraste sur l'orange vif */
+    color: var(--color-text-dark);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.theme-index .tuto-band-btn:hover,
+body.theme-index .tuto-band-btn:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -6px rgba(255, 107, 53, 0.6);
+}
+
+body.theme-index .tuto-band-link {
+    margin-left: 18px;
+    color: var(--color-text-dark);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+@media screen and (max-width: 800px) {
+    body.theme-index .tuto-band {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin: 30px 16px 0;
+        padding: 30px 24px;
+    }
+
+    body.theme-index .tuto-band-photo::before {
+        left: -24px;
+    }
+
+    body.theme-index .tuto-band-content h3 {
+        font-size: 26px;
+    }
 }
 
 body.theme-index .separator {
@@ -1891,13 +1998,16 @@ body.theme-blog {
     color: var(--color-text);
 }
 
-body.theme-blog .article-section {
+/* Les cartes ci-dessous servent aussi à la liste des tutos (pages/tuto/tuto.php) */
+body.theme-blog .article-section,
+body.theme-tuto .article-section {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
 }
 
-body.theme-blog .article-section h2 {
+body.theme-blog .article-section h2,
+body.theme-tuto .article-section h2 {
     font-family: 'brockmann';
     text-align: center;
     font-size: 1.8em;
@@ -1905,122 +2015,238 @@ body.theme-blog .article-section h2 {
     margin: 20px 0 30px;
 }
 
-body.theme-blog .articles-container {
+/* Une carte par ligne, comme le bandeau de l'accueil */
+body.theme-blog .articles-container,
+body.theme-tuto .articles-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-    gap: 32px;
+    grid-template-columns: 1fr;
+    gap: 40px;
 }
 
-@media screen and (max-width: 768px) {
-    body.theme-blog .articles-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-body.theme-blog .article-card {
-    background-color: #fff;
-    border-radius: 16px;
-    padding: 24px;
-    box-shadow: 0 2px 14px rgba(16, 40, 55, 0.08);
+/* Cartes articles : même style que le bandeau "Voir le tuto" de l'accueil */
+/* Photo à gauche, texte à droite : les lignes 1fr en haut et en bas
+   centrent verticalement le texte à côté de la photo */
+body.theme-blog .article-card,
+body.theme-tuto .article-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 1fr auto auto auto auto 1fr;
+    column-gap: 48px;
+    background-color: var(--color-bg-muted);
+    border-radius: 30px;
+    padding: 50px 40px;
     text-align: left;
+    overflow: hidden;
 }
 
-body.theme-blog .article-card img {
+body.theme-blog .article-card > :not(img),
+body.theme-tuto .article-card > :not(img) {
+    grid-column: 2;
+}
+
+body.theme-blog .article-card h3,
+body.theme-tuto .article-card h3 {
+    grid-row: 2;
+}
+
+body.theme-blog .article-card .info,
+body.theme-tuto .article-card .info {
+    grid-row: 3;
+}
+
+body.theme-blog .article-card > p,
+body.theme-tuto .article-card > p {
+    grid-row: 4;
+}
+
+body.theme-blog .article-card .customButton,
+body.theme-tuto .article-card .customButton {
+    grid-row: 5;
+}
+
+/* Forme décalée derrière la photo */
+body.theme-blog .article-card::before,
+body.theme-tuto .article-card::before {
+    content: '';
+    position: absolute;
+    top: 22%;
+    left: 0;
+    width: 20%;
+    height: 50%;
+    background: var(--color-bg-alt);
+    border-radius: 0 30px 30px 0;
+}
+
+body.theme-blog .article-card img,
+body.theme-tuto .article-card img {
+    position: relative;
+    grid-column: 1;
+    grid-row: 1 / 7;
     width: 100%;
-    height: 300px;
+    height: 100%;
+    min-height: 320px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 26px;
     display: block;
-    margin-bottom: 20px;
 }
 
-body.theme-blog .article-card h3 {
-    font-size: 1.4em;
-    line-height: 1.3;
+body.theme-blog .article-card h3,
+body.theme-tuto .article-card h3 {
+    font-family: 'brockmann', 'marianne', sans-serif;
+    font-weight: 500;
+    font-size: 1.9em;
+    line-height: 1.1;
     margin: 0 0 14px;
     text-align: left;
 }
 
-body.theme-blog .article-card h3 a {
-    color: var(--color-text);
+body.theme-blog .article-card h3 a,
+body.theme-tuto .article-card h3 a {
+    color: var(--color-text-dark);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-body.theme-blog .article-card h3 a:hover {
+body.theme-blog .article-card h3 a:hover,
+body.theme-tuto .article-card h3 a:hover {
     color: var(--color-accent);
 }
 
-body.theme-blog .info {
+body.theme-blog .info,
+body.theme-tuto .info {
     display: flex;
     flex-wrap: wrap;
     gap: 8px 20px;
     font-size: 13px;
-    color: rgba(33, 34, 33, 0.6);
+    color: var(--color-text);
+    opacity: 0.7;
     padding-bottom: 14px;
-    margin-bottom: 14px;
-    border-bottom: 1px solid rgba(33, 34, 33, 0.1);
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(28, 20, 16, 0.12);
 }
 
-body.theme-blog .info p {
+body.theme-blog .info p,
+body.theme-tuto .info p {
     margin: 0;
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-body.theme-blog .article-card p {
-    margin: 0 0 16px;
+body.theme-blog .article-card p,
+body.theme-tuto .article-card p {
+    margin: 0 0 24px;
+    max-width: 48ch;
+    line-height: 1.55;
 }
 
-body.theme-blog .customButton a {
+body.theme-blog .customButton a,
+body.theme-tuto .customButton a {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: var(--color-accent);
-    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background-color: var(--color-accent);
+    /* texte foncé : le blanc manque de contraste sur l'orange vif */
+    color: var(--color-text-dark);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.3s ease, gap 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, gap 0.2s ease;
     cursor: pointer;
 }
 
-body.theme-blog .customButton a:hover {
-    border-color: var(--color-accent);
+body.theme-blog .customButton a:hover,
+body.theme-tuto .customButton a:hover,
+body.theme-blog .customButton a:focus-visible,
+body.theme-tuto .customButton a:focus-visible {
+    transform: translateY(-2px);
     gap: 12px;
+    box-shadow: 0 8px 20px -6px rgba(255, 107, 53, 0.6);
+}
+
+/* Tablette / mobile : photo au-dessus, texte en dessous */
+@media screen and (max-width: 800px) {
+    body.theme-blog .article-card,
+    body.theme-tuto .article-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        padding: 30px 24px;
+    }
+
+    body.theme-blog .article-card > *,
+    body.theme-tuto .article-card > *,
+    body.theme-blog .article-card img,
+    body.theme-tuto .article-card img,
+    body.theme-blog .article-card h3,
+    body.theme-tuto .article-card h3,
+    body.theme-blog .article-card .info,
+    body.theme-tuto .article-card .info,
+    body.theme-blog .article-card > p,
+    body.theme-tuto .article-card > p,
+    body.theme-blog .article-card .customButton,
+    body.theme-tuto .article-card .customButton {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    body.theme-blog .article-card::before,
+    body.theme-tuto .article-card::before {
+        top: 70px;
+        height: 150px;
+        width: 38%;
+    }
+
+    body.theme-blog .article-card img,
+    body.theme-tuto .article-card img {
+        height: 240px;
+        min-height: 0;
+        margin-bottom: 24px;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    body.theme-blog .article-section {
+    body.theme-blog .article-section,
+    body.theme-tuto .article-section {
         padding: 14px;
     }
 
-    body.theme-blog .articles-container {
+    body.theme-blog .articles-container,
+    body.theme-tuto .articles-container {
         gap: 20px;
     }
 
-    body.theme-blog .article-card {
-        padding: 16px;
-        border-radius: 12px;
+    body.theme-blog .article-card,
+    body.theme-tuto .article-card {
+        padding: 22px;
+        border-radius: 24px;
     }
 
-    body.theme-blog .article-card img {
-        height: 200px;
+    body.theme-blog .article-card h3,
+    body.theme-tuto .article-card h3 {
+        font-size: 1.35em;
     }
 
-    body.theme-blog .info {
+    body.theme-blog .info,
+    body.theme-tuto .info {
         font-size: 12px;
         gap: 6px 14px;
     }
 }
 
-body.theme-blog .section-tuto {
+body.theme-blog .section-tuto,
+body.theme-tuto .section-tuto {
     background-color: transparent;
     padding: 20px;
     margin-top: 20px;
 }
 
-body.theme-blog .section-tuto h2 {
+body.theme-blog .section-tuto h2,
+body.theme-tuto .section-tuto h2 {
     font-family: 'brockmann';
     color: var(--color-accent);
     font-size: 1.3em;
@@ -2028,19 +2254,22 @@ body.theme-blog .section-tuto h2 {
     margin: 0 0 16px;
 }
 
-body.theme-blog .section-tuto ul {
+body.theme-blog .section-tuto ul,
+body.theme-tuto .section-tuto ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-body.theme-blog .section-tuto li a {
+body.theme-blog .section-tuto li a,
+body.theme-tuto .section-tuto li a {
     color: var(--color-text);
     text-decoration: none;
 }
 
-body.theme-blog .section-tuto li a:hover {
+body.theme-blog .section-tuto li a:hover,
+body.theme-tuto .section-tuto li a:hover {
     color: var(--color-accent);
     text-decoration: underline;
 }
@@ -2320,7 +2549,7 @@ body.theme-article-table table {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 14px rgba(16, 40, 55, 0.08);
+    box-shadow: 0 2px 14px rgba(28, 20, 16, 0.08);
 }
 
 body.theme-article-table caption {
@@ -2439,7 +2668,7 @@ body.theme-404 .error-404__cta {
 
 body.theme-404 .error-404__cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(16, 40, 55, 0.2);
+    box-shadow: 0 6px 16px rgba(28, 20, 16, 0.2);
 }
 
 body.theme-404 .error-404__image {
@@ -2453,8 +2682,8 @@ body.theme-404 .error-404__image img {
     height: auto;
     display: block;
     border-radius: 16px;
-    border: 1px solid rgba(16, 40, 55, 0.1);
-    box-shadow: 0 12px 32px rgba(16, 40, 55, 0.1);
+    border: 1px solid rgba(28, 20, 16, 0.1);
+    box-shadow: 0 12px 32px rgba(28, 20, 16, 0.1);
     background-color: #fff;
 }
 

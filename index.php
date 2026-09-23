@@ -14,7 +14,7 @@
     <!-- Encodage et viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#123B52">
+    <meta name="theme-color" content="#2A1A14">
 
     <!-- Favicon (PNG et ICO pour compatibilité maximale) -->
     <link rel="icon" type="image/png" href="https://wake-skate.fr/images/palo-icon.png">
@@ -217,6 +217,19 @@
             </div>
         </div>
     </div>
+
+    <section class="tuto-band">
+        <div class="tuto-band-photo">
+            <img src="/images/IMG-20250712-WA0001.jpg" alt="Session de wakeskate au wakepark" loading="lazy">
+        </div>
+        <div class="tuto-band-content">
+            <h3>Premier ollie au wakepark</h3>
+            <p>Position des pieds, timing du pop et réception : le guide pas à pas pour décoller la planche du câble.</p>
+            <a href="/ollie" class="tuto-band-btn">Voir le tuto <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/kickflip" class="tuto-band-link">Kickflip</a>
+        </div>
+    </section>
+
     <div class="separator"></div>
     <!-- <div class="video-container">
 

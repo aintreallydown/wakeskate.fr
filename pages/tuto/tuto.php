@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="chocolate">
+    <meta name="theme-color" content="#2A1A14">
 
     <!-- Favicon (PNG et ICO pour compatibilité maximale) -->
     <link rel="icon" type="image/png" href="https://wake-skate.fr/images/palo-icon.png">
@@ -86,100 +86,66 @@
             </div>
         </div>
     </div>
-    <div class="grid-container">
-        <div class="grid-item">
-            <p>02.</p>
+    <div class="article-section">
+
+        <div class="articles-container">
+            <article class="article-card">
+                <img src="../../images/tuto-ollie.jpg" alt="Ollie en wakeskate au wakepark" loading="lazy">
+                <h3><a href="/ollie">OLLIE</a></h3>
+                <div class="info">
+                    <p><i class="fa fa-user"></i>&nbsp;Driss</p>
+                    <p><i class="fa fa-calendar-day"></i>&nbsp;<time>11 Juin 2025</time></p>
+                    <p><i class="fa fa-clock"></i>&nbsp;5 min</p>
+                    <p><i class="fas fa-stopwatch"></i>&nbsp;1 séance de 1h</p>
+                </div>
+                <p>Le trick de base en wakeskate, un fondamental pour évoluer. Le secret du ollie réside dans l'appui palo au moment de déclencher le geste.</p>
+                <div class="customButton">
+                    <a href="/ollie">Voir le tuto <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="../../images/tuto-shove.jpg" alt="Pop shove en wakeskate au wakepark" loading="lazy">
+                <h3><a href="/shove">POP SHOVE</a></h3>
+                <div class="info">
+                    <p><i class="fa fa-user"></i>&nbsp;Driss</p>
+                    <p><i class="fa fa-calendar-day"></i>&nbsp;<time>11 Juin 2025</time></p>
+                    <p><i class="fa fa-clock"></i>&nbsp;5 min</p>
+                    <p><i class="fas fa-stopwatch"></i>&nbsp;3 à 6 séances de 1h</p>
+                </div>
+                <p>Un autre trick de base pour évoluer. Le secret du shove réside dans la répartition du poids du corps au moment de déclencher le geste, puis au moment du catch.</p>
+                <div class="customButton">
+                    <a href="/shove">Voir le tuto <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="../../images/tuto-kickflip.jpg" alt="Kickflip en wakeskate au wakepark" loading="lazy">
+                <h3><a href="/kickflip">KICKFLIP</a></h3>
+                <div class="info">
+                    <p><i class="fa fa-user"></i>&nbsp;Driss</p>
+                    <p><i class="fa fa-calendar-day"></i>&nbsp;<time>11 Juin 2025</time></p>
+                    <p><i class="fa fa-clock"></i>&nbsp;5 min</p>
+                    <p><i class="fas fa-stopwatch"></i>&nbsp;1 à 10 séances de 1h</p>
+                </div>
+                <p>Un trick avancé. Le bon kickflip réside dans le timing entre la jambe arrière, la jambe avant et l'appui palo au moment de déclencher le geste.</p>
+                <div class="customButton">
+                    <a href="/kickflip">Voir le tuto <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
         </div>
-        <div class="grid-item">
-            <h2><a href="/ollie">OLLIE</a></h2>
+
+        <div class="section-tuto">
+            <h2>Vous aimerez aussi :</h2>
+            <ul>
+                <li><a href="/bases-du-wakeskate-guide-pour-debutants">Les bases du wakeskate : Guide pour débutants</a></li>
+                <li><a href="/comment-choisir-son-wakeskate-en-2026">Comment choisir sa planche de wakeskate ?</a></li>
+                <li><a href="/">Techniques avancées en wakeskate : Trucs et astuces</a></li>
+                <li><a href="/">Entretien de sa planche de wakeskate : Conseils pratiques</a></li>
+            </ul>
         </div>
-        <div class="grid-item">
-            <p>Dans ce tutoriel, nous allons vous montrer comment réaliser un des tricks de base en
-                wakeskate, un
-                fondamental pour evoluer.
-                Le secret du Ollie, reside dans l'appuie palo au moment de declencher le geste..</p>
-        </div>
-        <div class="grid-item">
-            <p><strong>Auteur :</strong>&nbsp;<i class="fa fa-user"></i>&nbsp; Driss</p>
-            <p><strong>Date :</strong>&nbsp;<i class="fa fa-calendar-day"></i>&nbsp; 11 Juin 2025</p>
-            <p><strong>Catégorie :</strong>&nbsp;<i class="fas fa-skateboard"></i>&nbsp; Apprentissage</p>
-            <p><strong>Lecture : &nbsp;<i class="fa fa-clock"></i>&nbsp; 5 min</strong></p>
-            <p><strong>Apprentissage: &nbsp;<i class="fa fa-clock"></i>&nbsp; 1 séance de 1h</strong></p>
-        </div>
-    </div>
-    </div>
     </div>
 
-
-    <div class="grid-container">
-        <div class="grid-item">
-            <p>03.</p>
-        </div>
-        <div class="grid-item">
-            <h2><a href="/shove">SHOVE</a></h2>
-        </div>
-        <div class="grid-item">
-            <p>Dans ce tutoriel, nous allons vous montrer comment réaliser un des tricks de base en
-                wakeskate, un
-                fondamental pour evoluer.
-                Le secret du shove, reside dans la repartition du poid du corps au moment de declencher le
-                geste, et
-                au
-                moment du catch...</p>
-        </div>
-        <div class="grid-item">
-            <p><strong>Auteur :</strong>&nbsp;<i class="fa fa-user"></i>&nbsp; Driss</p>
-            <p><strong>Date :</strong>&nbsp;<i class="fa fa-calendar-day"></i>&nbsp; 11 Juin 2025</p>
-            <p><strong>Catégorie :</strong>&nbsp;<i class="fas fa-skateboard"></i>&nbsp; Apprentissage
-            </p>
-            <p><strong>Lecture : &nbsp;<i class="fa fa-clock"></i>&nbsp; 5 min</strong></p>
-            <p><strong>Apprentissage: &nbsp;<i class="fa fa-clock"></i>&nbsp; 3 à 6 séances de
-                    1h</strong></p>
-        </div>
-    </div>
-    </div>
-    </div>
-
-    <div class="grid-container">
-        <div class="grid-item">
-            <p>04.</p>
-        </div>
-        <div class="grid-item">
-            <h2><a href="/kickflip">KICKFLIP</a></h2>
-        </div>
-        <div class="grid-item">
-            <p>Dans ce tutoriel, nous allons vous montrer comment réaliser un des tricks avancé en
-                wakeskate, un
-                fondamental pour evoluer.
-                Le BON Kickflip, reside dans le timing entre la jambe arriere, la jambe avant et l'appuie palo
-                au
-                moment de declencher le geste...</p>
-        </div>
-        <div class="grid-item">
-            <p><strong>Auteur :</strong>&nbsp;<i class="fa fa-user"></i>&nbsp; Driss</p>
-            <p><strong>Date :</strong>&nbsp;<i class="fa fa-calendar-day"></i>&nbsp; 11 Juin 2025</p>
-            <p><strong>Catégorie :</strong>&nbsp;<i class="fas fa-skateboard"></i>&nbsp; Apprentissage</p>
-            <p><strong>Lecture : &nbsp;<i class="fa fa-clock"></i>&nbsp; 5 min</strong></p>
-            <p><strong>Apprentissage: &nbsp;<i class="fa fa-clock"></i>&nbsp; 1 à 10 séances de 1h</strong></p>
-        </div>
-    </div>
-    </div>
-    </div>
-
-
-
-    <div class="separator"></div>
-    <div class="section-tuto" style="margin: 20px; padding-top: 20px;">
-        <h2>Vous aimerez aussi :</h2>
-
-        <ul style="list-style: none;">
-            <li><a href="/">Les bases du wakeskate : Guide pour débutants</a></li>
-            <li><a href="/">Comment choisir sa planche de wakeskate ?</a></li>
-            <li><a href="/">Techniques avancées en wakeskate : Trucs et astuces</a></li>
-            <li><a href="/">Entretien de sa planche de wakeskate : Conseils pratiques</a></li>
-        </ul>
-    </div>
-    </div>
 
 
 

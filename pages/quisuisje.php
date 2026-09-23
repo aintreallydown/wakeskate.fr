@@ -8,7 +8,7 @@ require_once '../back-end/contactBe.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="chocolate">
+    <meta name="theme-color" content="#2A1A14">
 
     <!-- Favicon (PNG et ICO pour compatibilité maximale) -->
     <link rel="icon" type="image/png" href="https://wake-skate.fr/images/palo-icon.png">
