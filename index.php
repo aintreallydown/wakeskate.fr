@@ -14,7 +14,7 @@
     <!-- Encodage et viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#c15123">
+    <meta name="theme-color" content="#123B52">
 
     <!-- Favicon (PNG et ICO pour compatibilité maximale) -->
     <link rel="icon" type="image/png" href="https://wake-skate.fr/images/palo-icon.png">
