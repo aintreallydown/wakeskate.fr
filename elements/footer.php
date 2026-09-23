@@ -1,7 +1,7 @@
 <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-col footer-brand">
-            <a href="/" class="footer-logo">W<i>A</i>KE SK<i>A</i>TE</a>
+            <a href="/" class="footer-logo"><img class="logo-icon" src="/images/palo-icon-48x48.png" alt="" width="28" height="28">W<i>A</i>KE SK<i>A</i>TE</a>
             <p>Wakeskate your own way.</p>
         </div>
         <div class="footer-col footer-nav">
