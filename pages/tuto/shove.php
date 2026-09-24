@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     
-    <title>Tutoriel de wakeskate - shuvit</title>
+    <title>Ton premier pop shove derrière le câble - Tuto wakeskate</title>
 </head>
 
 <body class="theme-tuto">

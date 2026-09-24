@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     
-    <title>Tutoriel de wakeskate - ollie</title>
+    <title>Premier ollie au wakepark - Tuto wakeskate</title>
 </head>
 
 <body class="theme-tuto">

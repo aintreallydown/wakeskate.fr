@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     
-    <title>Tutoriel de wakeskate - kickflip</title>
+    <title>Premier kickflip sur l'eau - Tuto wakeskate</title>
 </head>
 
 <body class="theme-tuto">

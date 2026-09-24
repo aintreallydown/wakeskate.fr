@@ -91,7 +91,7 @@
         <div class="articles-container">
             <article class="article-card">
                 <img src="../../images/tuto-ollie.jpg" alt="Ollie en wakeskate au wakepark" loading="lazy">
-                <h3><a href="/ollie">OLLIE</a></h3>
+                <h3><a href="/ollie">PREMIER OLLIE AU WAKEPARK</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>11 Juin 2025</time></p>
@@ -106,7 +106,7 @@
 
             <article class="article-card">
                 <img src="../../images/tuto-shove.jpg" alt="Pop shove en wakeskate au wakepark" loading="lazy">
-                <h3><a href="/shove">POP SHOVE</a></h3>
+                <h3><a href="/shove">TON PREMIER POP SHOVE DERRIÈRE LE CÂBLE</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>11 Juin 2025</time></p>
@@ -121,7 +121,7 @@
 
             <article class="article-card">
                 <img src="../../images/tuto-kickflip.jpg" alt="Kickflip en wakeskate au wakepark" loading="lazy">
-                <h3><a href="/kickflip">KICKFLIP</a></h3>
+                <h3><a href="/kickflip">DÉCLENCHE TON PREMIER KICKFLIP SUR L'EAU</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>11 Juin 2025</time></p>
