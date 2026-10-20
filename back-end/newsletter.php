@@ -51,7 +51,7 @@ if (isset($_POST['newsletter_submit'])) {
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
                 $mail->Username = 'wakeskate.fr@gmail.com';
-                $mail->Password = 'rhyn zsff yiam lbdo'; // mot de passe d'application
+                $mail->Password =$this->getenv('EMAIL_PASSWORD'); // Utilise la variable d'environnement pour le mot de passe
                 $mail->SMTPSecure = 'tls';
                 $mail->Port = 587;
 
