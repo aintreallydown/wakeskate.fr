@@ -1833,18 +1833,18 @@ body.theme-tuto .color-container__2::before {
 
 /* 2s pour une animation est beaucoup trop long,
 toujours avoir une animation qui ne dure pas plus de .3s en générale
-fais attention à comment tu nomme ton animation, tu l'appel change_color 
-mais elle applique un changement de font-style aussi, trouve un nom qui peux regroupé les deux changements au premier regard j'avais meme pas vu 
+fais attention à comment tu nommes ton animation, tu l'appel change_color 
+mais elle applique un changement de font-style aussi, trouve un nom qui peux regroupe les changements est la bonne pratique. Au premier regard j'avais meme pas vu 
 que tu avais mis un changement de font-style, pour etre plus lisible et compréhensible pour quelqu'un qui lit ton code, fais attention à
-comment tu indente ton code. une bonne indentation permet de mieux comprendre la structure du code et de repérer les erreurs plus facilement.
+comment nommes et indente ton code. une bonne indentation permet de mieux comprendre la structure du code et de repérer les erreurs plus facilement.
 une ligne par propriété est une bonne pratique pour améliorer la lisibilité du code.
-La boucle de l'animation est mal choisie, le changement de couleur et de style de police se fait en une seule fois, 
-donc l'animation ne devrait pas être infinie, d'ailleurs on ne remarque pas le changement de font-style au survol à cause de ca.
-c'est bien d'utiliser un keyframes pour l'animation mais ici tu pourrais utiliser une transition CSS 
-pour un effet plus fluide et naturel.
+La boucle de l'animation (infinite) est mal choisie. 
+l'animation ne devrait pas être infinie, d'ailleurs on ne remarque pas le changement de font-style au survol à cause de ca.
+c'est bien d'utiliser un keyframes pour l'animation mais ici, c'est pas necessaire, car c'est se compliqué la vie pour rien, tu pourrais utiliser une transition CSS 
+pour un effet plus fluide et naturel, simple et plus maintenable.
 
-utilise la proriété transition pour declarer que le changement d'état avec une duré 0.3s et pour que l'effet de transition soit fluide (ease-in-out) pour un effet plus naturel.
-si tu veux que la transition se fasse sur plusieurs propriétés, tu peux utiliser la valeur all pour appliquer la transition à toutes les propriétés qui changent.
+utilise la proriété transition: pour declarer que un changement d'état aura une duré 0.3s et pour que l'effet de transition soit fluide (ease-in-out) pour un effet plus naturel.
+si tu veux que la transition se fasse sur toute les propriété qui changent de leur etat initial, tu peux utiliser la valeur all comme je l'ai fait plus bas.
 sinon tu cible les propriétés spécifiques que tu veux animer, par exemple transition: color 0.3s ease-in-out; pour animer uniquement la couleur de la police quand celle ci change.
 
 .grid-item a h2 {
