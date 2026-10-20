@@ -372,7 +372,7 @@ html {
     position: relative;
 }
 
-.float-nav-item.has-dropdown > a {
+.float-nav-item.has-dropdown>a {
     align-items: center;
     gap: 5px;
 }
@@ -1831,6 +1831,47 @@ body.theme-tuto .color-container__2::before {
     z-index: -1;
 }
 
+/* 2s pour une animation est beaucoup trop long,
+toujours avoir une animation qui ne dure pas plus de .3s en générale
+fais attention à comment tu nomme ton animation, tu l'appel change_color 
+mais elle applique un changement de font-style aussi, trouve un nom qui peux regroupé les deux changements au premier regard j'avais meme pas vu 
+que tu avais mis un changement de font-style, pour etre plus lisible et compréhensible pour quelqu'un qui lit ton code, fais attention à
+comment tu indente ton code. une bonne indentation permet de mieux comprendre la structure du code et de repérer les erreurs plus facilement.
+une ligne par propriété est une bonne pratique pour améliorer la lisibilité du code.
+La boucle de l'animation est mal choisie, le changement de couleur et de style de police se fait en une seule fois, 
+donc l'animation ne devrait pas être infinie, d'ailleurs on ne remarque pas le changement de font-style au survol à cause de ca.
+c'est bien d'utiliser un keyframes pour l'animation mais ici tu pourrais utiliser une transition CSS 
+pour un effet plus fluide et naturel.
+
+utilise la proriété transition pour declarer que le changement d'état avec une duré 0.3s et pour que l'effet de transition soit fluide (ease-in-out) pour un effet plus naturel.
+si tu veux que la transition se fasse sur plusieurs propriétés, tu peux utiliser la valeur all pour appliquer la transition à toutes les propriétés qui changent.
+sinon tu cible les propriétés spécifiques que tu veux animer, par exemple transition: color 0.3s ease-in-out; pour animer uniquement la couleur de la police quand celle ci change.
+
+.grid-item a h2 {
+    transition: all 0.3s ease-in;
+}
+
+.grid-item a h2:hover {
+    color: #2A1A14;
+    font-style: oblique;
+}
+ */
+
+
+
+.grid-item a h2:hover {
+    animation: change_color 2s infinite;
+}
+
+@keyframes change_color {
+    0% {}
+
+    100% {
+        color: #2A1A14;
+        font-style: oblique;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body.theme-tuto .grid-container {
         grid-template-columns: 1fr 1fr;
@@ -2040,8 +2081,8 @@ body.theme-tuto .article-card {
     overflow: hidden;
 }
 
-body.theme-blog .article-card > :not(img),
-body.theme-tuto .article-card > :not(img) {
+body.theme-blog .article-card> :not(img),
+body.theme-tuto .article-card> :not(img) {
     grid-column: 2;
 }
 
@@ -2055,8 +2096,8 @@ body.theme-tuto .article-card .info {
     grid-row: 3;
 }
 
-body.theme-blog .article-card > p,
-body.theme-tuto .article-card > p {
+body.theme-blog .article-card>p,
+body.theme-tuto .article-card>p {
     grid-row: 4;
 }
 
@@ -2171,6 +2212,7 @@ body.theme-tuto .customButton a:focus-visible {
 
 /* Tablette / mobile : photo au-dessus, texte en dessous */
 @media screen and (max-width: 800px) {
+
     body.theme-blog .article-card,
     body.theme-tuto .article-card {
         grid-template-columns: 1fr;
@@ -2178,16 +2220,16 @@ body.theme-tuto .customButton a:focus-visible {
         padding: 30px 24px;
     }
 
-    body.theme-blog .article-card > *,
-    body.theme-tuto .article-card > *,
+    body.theme-blog .article-card>*,
+    body.theme-tuto .article-card>*,
     body.theme-blog .article-card img,
     body.theme-tuto .article-card img,
     body.theme-blog .article-card h3,
     body.theme-tuto .article-card h3,
     body.theme-blog .article-card .info,
     body.theme-tuto .article-card .info,
-    body.theme-blog .article-card > p,
-    body.theme-tuto .article-card > p,
+    body.theme-blog .article-card>p,
+    body.theme-tuto .article-card>p,
     body.theme-blog .article-card .customButton,
     body.theme-tuto .article-card .customButton {
         grid-column: 1;
@@ -2210,6 +2252,7 @@ body.theme-tuto .customButton a:focus-visible {
 }
 
 @media screen and (max-width: 600px) {
+
     body.theme-blog .article-section,
     body.theme-tuto .article-section {
         padding: 14px;
