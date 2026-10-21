@@ -108,28 +108,33 @@
 
     <?php require_once 'elements/navigation.php'; ?>
 
-    <!-- <div id="modal"
-        style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.5);">
-        <div
-            style="background: white; padding: 20px; border-radius: 8px; width: 90%; max-width: 400px; margin: 100px auto; position: relative;">
-            <span id="close-modal"
-                style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 1.5em;">&times;</span>
-            <h2 style="text-decoration: underline;">Inscription à la Newsletter</h2>
 
-            <form action="" method="post">
-                <input type="email" name="email_newsletter" placeholder="Votre adresse email" required>
-                <label>
-                    <input type="checkbox" name="consentement" required>
-                    J’ai lu et j’accepte les conditions générales d’utilisation.
-                </label><br /><br />
-                <p> En vous inscrivant, vous acceptez de recevoir des emails de notre part sur les nouvelles
-                    publications du site. Vous pouvez vous désinscrire à tout moment.</p>
-                <button type="submit" name="newsletter_submit" class="submit-button">S'inscrire <i
-                        class="fas fa-paper-plane"></i></button>
+    <!-- 
+        j'aime bien l'idée mais tu repete et crée une nouvelle classe et une nouvelle div pour chaque item,
+        c'est pas necessaire, surtout que sémantiquement c'est pas correct car les div doivent représenter un seul bloc. 
+        Ce que tu peux faire c'est juste utiliser une seul div pour le bloc et une classe commune pour tous les items 
+        et les styliser avec des pseudo-classes ou des nth-child si tu veux des styles différents 
+        pour chaque item. 
 
-            </form>
+        en css tu selectionne les items enfant avec .schema_container span:nth-child(1) pour le premier, 
+        .schema_container span:nth-child(2) pour le deuxième etc. 
+        et tu appliques les styles que tu veux.
+
+        Toujours garder en tête la sémantique du html qui à une valeur importante pour le référencement, la performance et l'accessibilité.
+
+        Toujours se poser la question quel est l'element parent et quel est l'element enfant, et comment ils sont liés entre eux.
+
+
+        <div class="schema_container">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </div> -->
+
+    -->
+
     <div class="schema_container">
         <div class="schema_head"></div>
         <div class="schema_item1"></div>
