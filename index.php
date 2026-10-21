@@ -130,8 +130,15 @@
             </form>
         </div>
     </div> -->
-
-    <img src="../images/schema.png" alt="Wakeskate" class="hero-image">
+    <div class="schema_container">
+        <div class="schema_head"></div>
+        <div class="schema_item1"></div>
+        <div class="schema_item2"></div>
+        <div class="schema_item3"></div>
+        <div class="schema_item4"></div>
+        <div class="schema_item5"></div>
+        <!--<img src="../images/schema.png" alt="Wakeskate" class="hero-image"> <-->
+    </div>
     <div class="brockmanTitle">
         <p><a href="/mon-retour-sur-la-progression-en-wakeskate">W<i>A</i>KESK<i>A</i>TE YOUR OWN W<span class="italic-reverse">A</span>Y.</a></p><br />
         <p><a href="/tuto">TUTORIELS</a></p><br />
