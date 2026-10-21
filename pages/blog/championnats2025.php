@@ -183,12 +183,11 @@
 
             <div class="section-tuto">
                 <h2>Vous aimerez aussi :</h2>
-                <p>(section à venir)</p>
                 <ul>
                     <li><a href="/bases-du-wakeskate-guide-pour-debutants">Les bases du wakeskate : Guide pour débutants</a></li>
                     <li><a href="/comment-choisir-son-wakeskate-en-2026">Comment choisir sa planche de wakeskate ?</a></li>
-                    <li><a href="/">Techniques avancées en wakeskate : Trucs et astuces</a></li>
-                    <li><a href="/">Entretien de sa planche de wakeskate : Conseils pratiques</a></li>
+                    <li><a href="/tuto">Techniques avancées en wakeskate : Trucs et astuces</a></li>
+                    <li><a href="/mon-retour-sur-la-progression-en-wakeskate">Mon retour sur la progression en Wakeskate</a></li>
                 </ul>
             </div>
 
