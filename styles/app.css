@@ -878,8 +878,14 @@ body.theme-index .grid-item a {
 
 body.theme-index .form-note a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color-accent);
     cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+body.theme-index .form-note a:hover {
+    color: var(--color-nav-footer-bg);
+    text-decoration: underline solid;
 }
 
 body.theme-index .form-note p {
