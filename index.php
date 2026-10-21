@@ -241,7 +241,7 @@
 
     </div> -->
     <div class="form-container" id="contact">
-        <h2>Vous avez pas instagram ? Contactez moi ici <i class="fa-solid fa-arrow-right"></i><br /><br /> Ou sinon, par là...<br /><a href="https://www.instagram.com/drissbnkiran?igsh=MWpsaTBqNjlsc2EycQ==" target="_blank"
+        <h2>Vous avez pas instagram ? Contactez moi ici <i class="fa-solid fa-arrow-right"></i><br /><br /> Ou sinon, par là...<br /><a href="https://www.instagram.com/drissbnkiran?igsh=MWpsaTBqNjlsc2EycQ==" aria-label="Rendez-vous sur mon Instagram" target="_blank"
                 rel="noopener"><i class="fab fa-instagram fa-2x icon"></i>
 
             </a></h2>
