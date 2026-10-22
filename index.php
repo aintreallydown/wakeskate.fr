@@ -107,43 +107,18 @@
 
 
     <?php require_once 'elements/navigation.php'; ?>
-
-
-    <!-- 
-        j'aime bien l'idée mais tu repete et crée une nouvelle classe et une nouvelle div pour chaque item,
-        c'est pas necessaire, surtout que sémantiquement c'est pas correct car les div doivent représenter un seul bloc. 
-        Ce que tu peux faire c'est juste utiliser une seul div pour le bloc et une classe commune pour tous les items 
-        et les styliser avec des pseudo-classes ou des nth-child si tu veux des styles différents 
-        pour chaque item. 
-
-        en css tu selectionne les items enfant avec .schema_container span:nth-child(1) pour le premier, 
-        .schema_container span:nth-child(2) pour le deuxième etc. 
-        et tu appliques les styles que tu veux.
-
-        Toujours garder en tête la sémantique du html qui à une valeur importante pour le référencement, la performance et l'accessibilité.
-
-        Toujours se poser la question quel est l'element parent et quel est l'element enfant, et comment ils sont liés entre eux.
-
-
+    
+    <section>
         <div class="schema_container">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
+            <span></span>
         </div>
+    </section>
 
-    -->
-
-    <div class="schema_container">
-        <div class="schema_head"></div>
-        <div class="schema_item1"></div>
-        <div class="schema_item2"></div>
-        <div class="schema_item3"></div>
-        <div class="schema_item4"></div>
-        <div class="schema_item5"></div>
-        <!--<img src="../images/schema.png" alt="Wakeskate" class="hero-image"> <-->
-    </div>
     <div class="brockmanTitle">
         <p><a href="/mon-retour-sur-la-progression-en-wakeskate">W<i>A</i>KESK<i>A</i>TE YOUR OWN W<span class="italic-reverse">A</span>Y.</a></p><br />
         <p><a href="/tuto">TUTORIELS</a></p><br />
