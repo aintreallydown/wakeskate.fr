@@ -39,7 +39,7 @@ require_once '../back-end/contactBe.php';
     <title>Qui suis je ?</title>
 </head>
 
-<body id="dark-mode" class="theme-tuto theme-rotate">
+<body class="theme-tuto theme-rotate">
     <div id="loading-bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100">
         <div id="loading-bar"></div>
     </div>
