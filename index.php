@@ -107,15 +107,20 @@
 
 
     <?php require_once 'elements/navigation.php'; ?>
-    
-    <section>
-        <div class="schema_container">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+
+     <!-- Container de maintien -->
+    <section class="schema_wrapper">
+        <!-- Container bg -->
+        <div class="schema_container_back">
+            <!-- Container grid -->
+            <div class="schema_container">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
         </div>
     </section>
 

@@ -419,22 +419,39 @@ html {
     background-color: rgba(243, 232, 214, 0.1);
 }
 
-.schema_container {
-    display: grid;
-    grid-template-columns: 3fr 1.1fr;
-    /* 2 colonnes, 1 pour la partie schema, 2 pour la partie légende */
-    grid-template-rows: repeat(18, 1fr);
-    row-gap: 1px;
+/* Bon bah c'était plus chaud que ça y paraissait ! J'ai du magouiller en créant un container vide qui contient un container bg qui contient la grid ^^.
+Position absolue, relative tout ça tout ça.... xD
+j'en ai bien chié mais je suis content du résultat. J'ai fais du keyframe d'opacity également.
+Et pour un rendu encore plus mieux j'ai reexporté mes bg pour garder que le orange. 
+J'espère que ça te plaira ! Dis-moi si y'avait plus simple mais je pense que j'économise des lignes comme ça plutot que de créer des pseudo elements
+dans tous les sens. Bisous !!! */
+
+/* Conteneur vide pour maintient Bg + grid */
+.schema_wrapper {
+    position: relative;
+    width: 100%;
     aspect-ratio: 1.8 / 1;
-    background-image: url(../images/schema.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
-/* Trés bien will, beaucoup mieux la logique ici, on comprend plus vite ce que tu veux faire,
-    c'est mieux organisée et c'est plus simple à maintenir.
- */
+/* Image de fond */
+.schema_container_back {
+    position: absolute;
+    inset: 0;
+    background: url("../images/schema.png") center / contain no-repeat;
+}
+
+/* Conteneur grid placé exactement au-dessus */
+.schema_container {
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    grid-template-columns: 3fr 1.1fr;
+    grid-template-rows: repeat(18, 1fr);
+    row-gap: 1px;
+
+    z-index: 1;
+}
 
 .schema_container span:nth-child(1) {
     grid-column: 2;
@@ -466,30 +483,40 @@ html {
     grid-row: 11 / span 2;
 }
 
-/* Le changement de backgroun-image a chaque survol provoque un clignotement, un 'saut' de l'image, 
-car la transition est trop brutal. on peux ameliorer ca en faisant un fondu entre les 
-images qui changent pour adoucir le changement.
-je te dis pas plus, mais en utilisant deux proprietes css tu peux y arriver facilement.
+@keyframes smoothed_opacity {   
+    from {
+        opacity: 0;
+    }
 
- */
-.schema_container:has(span:nth-child(2):hover) {
-    background-image: url(../images/schema1.png);
+    to {
+        opacity: 1;
+    }
+}
+
+/* bg exporté sans le croquis noir, juste la surbrillance orange */
+.schema_container:has(span:nth-child(2):hover){
+    animation: smoothed_opacity 0.3s ease-in-out;
+    background: url(../images/schema1.png) center / contain no-repeat;  
 }
 
 .schema_container:has(span:nth-child(3):hover) {
-    background-image: url(../images/schema2.png);
+    animation: smoothed_opacity 0.3s ease-in-out;
+    background: url(../images/schema2.png) center / contain no-repeat;
 }
 
 .schema_container:has(span:nth-child(4):hover) {
-    background-image: url(../images/schema3.png);
+    animation: smoothed_opacity 0.3s ease-in-out;
+    background: url(../images/schema3.png) center / contain no-repeat;
 }
 
 .schema_container:has(span:nth-child(5):hover) {
-    background-image: url(../images/schema4.png);
+    animation: smoothed_opacity 0.3s ease-in-out;
+    background: url(../images/schema4.png) center / contain no-repeat;
 }
 
 .schema_container:has(span:nth-child(6):hover) {
-    background-image: url(../images/schema5.png);
+    animation: smoothed_opacity 0.3s ease-in-out;
+    background: url(../images/schema5.png) center / contain no-repeat;
 }
 
 
