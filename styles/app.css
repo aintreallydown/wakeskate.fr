@@ -419,14 +419,32 @@ html {
     background-color: rgba(243, 232, 214, 0.1);
 }
 
-/* Bon bah c'était plus chaud que ça y paraissait ! J'ai du magouiller en créant un container vide qui contient un container bg qui contient la grid ^^.
-Position absolue, relative tout ça tout ça.... xD
-j'en ai bien chié mais je suis content du résultat. J'ai fais du keyframe d'opacity également.
-Et pour un rendu encore plus mieux j'ai reexporté mes bg pour garder que le orange. 
-J'espère que ça te plaira ! Dis-moi si y'avait plus simple mais je pense que j'économise des lignes comme ça plutot que de créer des pseudo elements
-dans tous les sens. Bisous !!! */
+/* Bonne idée de rajoute un wrapper en position relative pour contenir le tout
+plus facile de codé des position chelou sur l'enfant avec un parent en position 
+relative. c'est parfait ! le saut n'est plus la, c'est plus propre au niveau de la transition.
+por contre tu appel le keyframe à chaque fois que tu survol un élément pa-ouf si tu cherche a économisé de la ressource, 
+mais c'est normal au début de pas voir comment bien faire tout de suite. On va remplacer ton
+keyframe par un transition sur l'opacité et le background-image. c'est plus simple et plus propre. ca fait exactement la meme 
+sans avoir a faire un keyframe. tu peux le faire sur le parent a condition de regler l'opacité des enfants a 1 pour qu'il ne disparaisse pas. tu peux aussi faire une transition sur le background-image sans opacité
+mais l'effet est moins doux. je te laisse faire le choix.,
 
-/* Conteneur vide pour maintient Bg + grid */
+    schema_container{
+        transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+    }  
+
+J' ai mis 1 seconde de transition, 
+parce que c'est pas un composant web qui doit etre super rapide, c'est juste un schema, 
+donc on peut se permettre d'avoir une transition plus longue pour que ce soit plus doux.
+
+
+pour la partie Resine je pense que tu peux coloré l'entierté de la planche vu de haut et sur la coupe de profil(mais bon ca n'engage que toi) je veux te 
+rajouté encore plus de boulot hihi
+
+
+Bisoux le Couz' 
+
+*/
+
 .schema_wrapper {
     position: relative;
     width: 100%;
@@ -444,13 +462,12 @@ dans tous les sens. Bisous !!! */
 .schema_container {
     position: absolute;
     inset: 0;
-
     display: grid;
     grid-template-columns: 3fr 1.1fr;
     grid-template-rows: repeat(18, 1fr);
     row-gap: 1px;
-
     z-index: 1;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .schema_container span:nth-child(1) {
@@ -483,7 +500,7 @@ dans tous les sens. Bisous !!! */
     grid-row: 11 / span 2;
 }
 
-@keyframes smoothed_opacity {   
+/* @keyframes smoothed_opacity {   
     from {
         opacity: 0;
     }
@@ -491,32 +508,36 @@ dans tous les sens. Bisous !!! */
     to {
         opacity: 1;
     }
-}
+} */
 
-/* bg exporté sans le croquis noir, juste la surbrillance orange */
-.schema_container:has(span:nth-child(2):hover){
-    animation: smoothed_opacity 0.3s ease-in-out;
-    background: url(../images/schema1.png) center / contain no-repeat;  
+.schema_container:has(span:nth-child(2):hover) {
+    /* animation: smoothed_opacity 0.3s ease-in-out; */
+    background: url(../images/schema1.png) center / contain no-repeat;
+    opacity: 1;
 }
 
 .schema_container:has(span:nth-child(3):hover) {
-    animation: smoothed_opacity 0.3s ease-in-out;
+    /* animation: smoothed_opacity 0.3s ease-in-out; */
     background: url(../images/schema2.png) center / contain no-repeat;
+    opacity: 1;
 }
 
 .schema_container:has(span:nth-child(4):hover) {
-    animation: smoothed_opacity 0.3s ease-in-out;
+    /* animation: smoothed_opacity 0.3s ease-in-out; */
     background: url(../images/schema3.png) center / contain no-repeat;
+    opacity: 1;
 }
 
 .schema_container:has(span:nth-child(5):hover) {
-    animation: smoothed_opacity 0.3s ease-in-out;
+    /* animation: smoothed_opacity 0.3s ease-in-out; */
     background: url(../images/schema4.png) center / contain no-repeat;
+    opacity: 1;
 }
 
 .schema_container:has(span:nth-child(6):hover) {
-    animation: smoothed_opacity 0.3s ease-in-out;
+    /* animation: smoothed_opacity 0.3s ease-in-out; */
     background: url(../images/schema5.png) center / contain no-repeat;
+    opacity: 1;
 }
 
 
