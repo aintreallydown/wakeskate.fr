@@ -21,10 +21,10 @@
     <title>Blog sur le wakeskate</title>
 </head>
 
-<body id="dark-mode" class="theme-blog">
+<body class="theme-blog">
 
     <!-- 
-    <div class="bandeau" id="dark-mode-toggle">
+    <div class="bandeau">
         <h1>W/S</h1>
 
     </div> -->

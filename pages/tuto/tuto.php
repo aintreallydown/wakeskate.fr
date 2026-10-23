@@ -37,7 +37,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
-<body id="dark-mode" class="theme-tuto theme-rotate">
+<body class="theme-tuto theme-rotate">
     <div id="loading-bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100">
         <div id="loading-bar"></div>
     </div>

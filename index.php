@@ -95,7 +95,7 @@
     gtag('config', 'G-27ZTXGK330');
 </script>
 
-<body id="dark-mode" class="theme-index">
+<body class="theme-index">
 
 
 
