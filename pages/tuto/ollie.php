@@ -22,6 +22,20 @@
 
     
     <title>Premier ollie au wakepark - Tuto wakeskate</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Tuto wakeskate : apprendre le ollie au wakepark étape par étape, position des pieds, appui palonnier et timing du pop.">
+    <link rel="canonical" href="https://wake-skate.fr/ollie">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="wake-skate.fr">
+    <meta property="og:title" content="Premier ollie au wakepark - Tuto wakeskate">
+    <meta property="og:description" content="Tuto wakeskate : apprendre le ollie au wakepark étape par étape, position des pieds, appui palonnier et timing du pop.">
+    <meta property="og:url" content="https://wake-skate.fr/ollie">
+    <meta property="og:image" content="https://wake-skate.fr/images/tuto-ollie.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="theme-tuto">

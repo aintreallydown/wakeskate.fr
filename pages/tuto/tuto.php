@@ -12,7 +12,7 @@
     <link rel="icon" href="https://wake-skate.fr/images/palo-icon-48x48.png" sizes="48x48">
     <!-- SEO -->
     <meta name="description"
-        content="Découvrez le wakeskate avec tutoriels, astuces et conseils pour tous les niveaux. Rejoignez la communauté wake-skate.fr !">
+        content="Tutos wakeskate en vidéo pour apprendre le ollie, le pop shove et le kickflip au wakepark, étape par étape.">
     <meta name="keywords" content="wakeskate, tutoriels wakeskate, astuces wakeskate, blog wakeskate">
 
     <!-- jquery -->
@@ -26,6 +26,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <title>Tutoriel de wakeskate</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://wake-skate.fr/tuto">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="wake-skate.fr">
+    <meta property="og:title" content="Tutoriel de wakeskate">
+    <meta property="og:description" content="Tutos wakeskate en vidéo pour apprendre le ollie, le pop shove et le kickflip au wakepark, étape par étape.">
+    <meta property="og:url" content="https://wake-skate.fr/tuto">
+    <meta property="og:image" content="https://wake-skate.fr/images/tuto-ollie.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

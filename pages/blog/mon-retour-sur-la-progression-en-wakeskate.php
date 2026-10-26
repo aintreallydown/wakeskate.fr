@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <title>Mon retour sur la progression en wakeskate</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Du skateboard au wakeskate : mon retour d'expérience sur la progression, entre sessions en solo et motivation entre potes.">
+    <link rel="canonical" href="https://wake-skate.fr/mon-retour-sur-la-progression-en-wakeskate">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="wake-skate.fr">
+    <meta property="og:title" content="Mon retour sur la progression en wakeskate">
+    <meta property="og:description" content="Du skateboard au wakeskate : mon retour d'expérience sur la progression, entre sessions en solo et motivation entre potes.">
+    <meta property="og:url" content="https://wake-skate.fr/mon-retour-sur-la-progression-en-wakeskate">
+    <meta property="og:image" content="https://wake-skate.fr/images/IMG_20250709_175610_266.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Données structurées -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Mon retour sur la progression en wakeskate",
+        "description": "Du skateboard au wakeskate : mon retour d'expérience sur la progression, entre sessions en solo et motivation entre potes.",
+        "image": "https://wake-skate.fr/images/IMG_20250709_175610_266.jpg",
+        "datePublished": "2025-09-26",
+        "inLanguage": "fr-FR",
+        "author": {
+            "@type": "Person",
+            "name": "Driss Benkirane",
+            "url": "https://wake-skate.fr/quisuisje"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "wake-skate.fr",
+            "url": "https://wake-skate.fr"
+        },
+        "mainEntityOfPage": "https://wake-skate.fr/mon-retour-sur-la-progression-en-wakeskate"
+    }
+    </script>
 </head>
 
 
@@ -33,7 +71,7 @@
 
         <div class="articles-container">
             <div class="article-card">
-                <img src="../../images/IMG_20250709_175610_266.jpg" alt="Article Image">
+                <img src="../../images/IMG_20250709_175610_266.jpg" alt="Rider en session de wakeskate">
                 <h1>Mon retour sur la progression en
                     Wakeskate</h1>
             </div>

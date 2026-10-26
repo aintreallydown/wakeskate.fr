@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -19,6 +19,44 @@
         crossorigin="anonymous"></script>
 
     <title>Les bases du wakeskate : Guide pour débutants</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Débuter le wakeskate : différences avec le wakeboard, position, premiers départs au câble et conseils pour bien progresser.">
+    <link rel="canonical" href="https://wake-skate.fr/bases-du-wakeskate-guide-pour-debutants">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="wake-skate.fr">
+    <meta property="og:title" content="Les bases du wakeskate : Guide pour débutants">
+    <meta property="og:description" content="Débuter le wakeskate : différences avec le wakeboard, position, premiers départs au câble et conseils pour bien progresser.">
+    <meta property="og:url" content="https://wake-skate.fr/bases-du-wakeskate-guide-pour-debutants">
+    <meta property="og:image" content="https://wake-skate.fr/images/FB_IMG_1697614420391.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Données structurées -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Les bases du wakeskate : Guide pour débutants",
+        "description": "Débuter le wakeskate : différences avec le wakeboard, position, premiers départs au câble et conseils pour bien progresser.",
+        "image": "https://wake-skate.fr/images/FB_IMG_1697614420391.jpg",
+        "datePublished": "2026-01-03",
+        "inLanguage": "fr-FR",
+        "author": {
+            "@type": "Person",
+            "name": "Driss Benkirane",
+            "url": "https://wake-skate.fr/quisuisje"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "wake-skate.fr",
+            "url": "https://wake-skate.fr"
+        },
+        "mainEntityOfPage": "https://wake-skate.fr/bases-du-wakeskate-guide-pour-debutants"
+    }
+    </script>
 </head>
 
 
@@ -31,7 +69,7 @@
 
         <div class="articles-container">
             <div class="article-card">
-                <img src="../../images/FB_IMG_1697614420391.jpg" alt="Article Image">
+                <img src="../../images/FB_IMG_1697614420391.jpg" alt="Wakeskate débutant au wakepark">
                 <h1>Les bases du wakeskate : Guide pour débutants </h1>
             </div>
 

@@ -22,6 +22,20 @@
 
     
     <title>Premier kickflip sur l'eau - Tuto wakeskate</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Tuto wakeskate : apprendre le kickflip sur l'eau, position des pieds, timing jambe arrière / jambe avant et appui palonnier.">
+    <link rel="canonical" href="https://wake-skate.fr/kickflip">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="wake-skate.fr">
+    <meta property="og:title" content="Premier kickflip sur l'eau - Tuto wakeskate">
+    <meta property="og:description" content="Tuto wakeskate : apprendre le kickflip sur l'eau, position des pieds, timing jambe arrière / jambe avant et appui palonnier.">
+    <meta property="og:url" content="https://wake-skate.fr/kickflip">
+    <meta property="og:image" content="https://wake-skate.fr/images/tuto-kickflip.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="theme-tuto">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,44 @@
         crossorigin="anonymous"></script>
 
     <title>Championnats de wakeboard & wakeskate - France 2025</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Récit des championnats de France 2025 de wakeboard et wakeskate : ambiance, riders et résultats vus de l'intérieur.">
+    <link rel="canonical" href="https://wake-skate.fr/championnats2025">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="wake-skate.fr">
+    <meta property="og:title" content="Championnats de wakeboard &amp; wakeskate - France 2025">
+    <meta property="og:description" content="Récit des championnats de France 2025 de wakeboard et wakeskate : ambiance, riders et résultats vus de l'intérieur.">
+    <meta property="og:url" content="https://wake-skate.fr/championnats2025">
+    <meta property="og:image" content="https://wake-skate.fr/images/IMG-20250706-WA0013.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Données structurées -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Championnats de wakeboard & wakeskate - France 2025",
+        "description": "Récit des championnats de France 2025 de wakeboard et wakeskate : ambiance, riders et résultats vus de l'intérieur.",
+        "image": "https://wake-skate.fr/images/IMG-20250706-WA0013.jpg",
+        "datePublished": "2025-08-11",
+        "inLanguage": "fr-FR",
+        "author": {
+            "@type": "Person",
+            "name": "Driss Benkirane",
+            "url": "https://wake-skate.fr/quisuisje"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "wake-skate.fr",
+            "url": "https://wake-skate.fr"
+        },
+        "mainEntityOfPage": "https://wake-skate.fr/championnats2025"
+    }
+    </script>
 </head>
 
 <body class="theme-article theme-championnats">
@@ -34,7 +72,7 @@
 
         <div class="articles-container">
             <div class="article-card">
-                <img src="../../images/IMG-20250706-WA0013.jpg" alt="Article Image">
+                <img src="../../images/IMG-20250706-WA0013.jpg" alt="Championnats de France de wakeboard et wakeskate 2025">
                 <h1>Championnats de wakeboard & wakeskate - France 2025</h1>
             </div>
 

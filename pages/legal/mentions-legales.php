@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <title>Mentions Légales & CGU - wake-skate.fr</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Mentions légales et conditions générales d'utilisation du blog wake-skate.fr.">
+    <link rel="canonical" href="https://wake-skate.fr/mentions-legales">
 </head>
 
 <body class="theme-mentions">

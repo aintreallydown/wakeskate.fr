@@ -29,6 +29,7 @@
         <ul>
             <li><a href="/mentions-legales">Mentions légales & CGU</a></li>
             <li><a href="/politique-de-confidentialite">Politique de confidentialité</a></li>
+            <li><a href="/plan-du-site">Plan du site</a></li>
             <li><button type="button" id="change-preferences" class="footer-preferences-btn">Modifier mes
                     préférences</button></li>
         </ul>

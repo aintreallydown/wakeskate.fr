@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,20 @@
 
 
     <title>Materiel de wakeskate</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Quelle planche de wakeskate choisir ? Présentation des marques (Quantum Boards, Fattitesi, Water Monster) et retour sur mon matériel perso.">
+    <link rel="canonical" href="https://wake-skate.fr/materiel">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="wake-skate.fr">
+    <meta property="og:title" content="Materiel de wakeskate">
+    <meta property="og:description" content="Quelle planche de wakeskate choisir ? Présentation des marques (Quantum Boards, Fattitesi, Water Monster) et retour sur mon matériel perso.">
+    <meta property="og:url" content="https://wake-skate.fr/materiel">
+    <meta property="og:image" content="https://wake-skate.fr/images/planche.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="theme-tuto theme-rotate">

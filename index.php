@@ -7,7 +7,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -26,13 +26,13 @@
     <meta name="description"
         content="Découvrez le wakeskate avec tutoriels, astuces et conseils pour tous les niveaux. Rejoignez la communauté wake-skate.fr !">
     <meta name="keywords" content="wakeskate, tutoriels wakeskate, astuces wakeskate, blog wakeskate">
-    <link rel="canonical" href="https://wake-skate.fr">
+    <link rel="canonical" href="https://wake-skate.fr/">
 
     <!-- Open Graph / réseaux sociaux -->
     <meta property="og:title" content="Wake Skate - Blog et Tutoriels">
     <meta property="og:description"
         content="Tout sur le wakeskate, astuces, vidéos et tutoriels pour débutants et pros.">
-    <meta property="og:image" content="../images/IMG-20250712-WA0001.jpg">
+    <meta property="og:image" content="https://wake-skate.fr/images/IMG-20250712-WA0001.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <!-- jquery -->
 

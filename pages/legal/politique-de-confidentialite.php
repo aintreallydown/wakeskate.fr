@@ -18,6 +18,10 @@
 
     
     <title>Politique de Confidentialité - wake-skate.fr</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Politique de confidentialité de wake-skate.fr : données collectées, cookies et vos droits.">
+    <link rel="canonical" href="https://wake-skate.fr/politique-de-confidentialite">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 

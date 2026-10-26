@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,20 @@
 
 
     <title>Wakepark Préféré en France</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Mes wakeparks préférés en France pour rider en wakeskate : Verberie, Champagne Wakepark, Jablines-Annet et Le Kable.">
+    <link rel="canonical" href="https://wake-skate.fr/wakepark">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="wake-skate.fr">
+    <meta property="og:title" content="Wakepark Préféré en France">
+    <meta property="og:description" content="Mes wakeparks préférés en France pour rider en wakeskate : Verberie, Champagne Wakepark, Jablines-Annet et Le Kable.">
+    <meta property="og:url" content="https://wake-skate.fr/wakepark">
+    <meta property="og:image" content="https://wake-skate.fr/images/IMG-20250712-WA0001.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="theme-tuto theme-rotate theme-wakepark">

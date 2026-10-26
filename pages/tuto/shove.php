@@ -22,6 +22,20 @@
 
     
     <title>Ton premier pop shove derrière le câble - Tuto wakeskate</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Tuto wakeskate : réussir son premier pop shove derrière le câble, placement des pieds, tension du palonnier et relâchement.">
+    <link rel="canonical" href="https://wake-skate.fr/shove">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="wake-skate.fr">
+    <meta property="og:title" content="Ton premier pop shove derrière le câble - Tuto wakeskate">
+    <meta property="og:description" content="Tuto wakeskate : réussir son premier pop shove derrière le câble, placement des pieds, tension du palonnier et relâchement.">
+    <meta property="og:url" content="https://wake-skate.fr/shove">
+    <meta property="og:image" content="https://wake-skate.fr/images/tuto-shove.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="theme-tuto">

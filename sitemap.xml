@@ -1,70 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <!-- Page d'accueil -->
    <url>
       <loc>https://wake-skate.fr/</loc>
-      <lastmod>2025-09-20</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
+      <lastmod>2026-10-26</lastmod>
    </url>
 
-   <!-- Exemple de page principale (à compléter avec tes vraies pages) -->
+   <!-- Blog -->
    <url>
       <loc>https://wake-skate.fr/blog</loc>
-      <lastmod>2025-09-20</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
+      <lastmod>2026-03-26</lastmod>
+   </url>
+   <url>
+      <loc>https://wake-skate.fr/quesque-le-wakeskate</loc>
+      <lastmod>2026-03-26</lastmod>
+   </url>
+   <url>
+      <loc>https://wake-skate.fr/comment-choisir-son-wakeskate-en-2026</loc>
+      <lastmod>2026-03-19</lastmod>
+   </url>
+   <url>
+      <loc>https://wake-skate.fr/bases-du-wakeskate-guide-pour-debutants</loc>
+      <lastmod>2026-01-03</lastmod>
+   </url>
+   <url>
+      <loc>https://wake-skate.fr/mon-retour-sur-la-progression-en-wakeskate</loc>
+      <lastmod>2025-09-26</lastmod>
+   </url>
+   <url>
+      <loc>https://wake-skate.fr/championnats2025</loc>
+      <lastmod>2025-08-11</lastmod>
    </url>
 
+   <!-- Tutos -->
    <url>
       <loc>https://wake-skate.fr/tuto</loc>
-      <lastmod>2025-09-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-    <url>
-      <loc>https://wake-skate.fr/wakepark</loc>
-      <lastmod>2025-09-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.3</priority>
    </url>
    <url>
-      <loc>https://wake-skate.fr/materiel</loc>
-      <lastmod>2025-09-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.3</priority>
-   </url>
-   <url>
-      <loc>https://wake-skate.fr/contact</loc>
-      <lastmod>2025-09-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.3</priority>
-   </url>
-   <url>
-      <loc>https://wake-skate.fr/quisuisje</loc>
-      <lastmod>2025-09-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
+      <loc>https://wake-skate.fr/ollie</loc>
    </url>
    <url>
       <loc>https://wake-skate.fr/shove</loc>
-      <lastmod>2025-09-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-<url>
-      <loc>https://wake-skate.fr/ollie</loc>
-      <lastmod>2025-09-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
    </url>
    <url>
       <loc>https://wake-skate.fr/kickflip</loc>
-      <lastmod>2025-09-20</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
    </url>
-  
+
+   <!-- Pages -->
+   <url>
+      <loc>https://wake-skate.fr/materiel</loc>
+   </url>
+   <url>
+      <loc>https://wake-skate.fr/wakepark</loc>
+   </url>
+   <url>
+      <loc>https://wake-skate.fr/quisuisje</loc>
+   </url>
+   <url>
+      <loc>https://wake-skate.fr/plan-du-site</loc>
+   </url>
 
 </urlset>

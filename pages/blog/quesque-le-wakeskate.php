@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <title>Pourquoi le wakeskate ?</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Pourquoi le wakeskate ? Ma vision personnelle de ce sport de glisse, les sensations en session et ce qu'on partage entre riders.">
+    <link rel="canonical" href="https://wake-skate.fr/quesque-le-wakeskate">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="wake-skate.fr">
+    <meta property="og:title" content="Pourquoi le wakeskate ?">
+    <meta property="og:description" content="Pourquoi le wakeskate ? Ma vision personnelle de ce sport de glisse, les sensations en session et ce qu'on partage entre riders.">
+    <meta property="og:url" content="https://wake-skate.fr/quesque-le-wakeskate">
+    <meta property="og:image" content="https://wake-skate.fr/images/articleWS.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Données structurées -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Pourquoi le wakeskate ?",
+        "description": "Pourquoi le wakeskate ? Ma vision personnelle de ce sport de glisse, les sensations en session et ce qu'on partage entre riders.",
+        "image": "https://wake-skate.fr/images/articleWS.jpg",
+        "datePublished": "2026-03-26",
+        "inLanguage": "fr-FR",
+        "author": {
+            "@type": "Person",
+            "name": "Driss Benkirane",
+            "url": "https://wake-skate.fr/quisuisje"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "wake-skate.fr",
+            "url": "https://wake-skate.fr"
+        },
+        "mainEntityOfPage": "https://wake-skate.fr/quesque-le-wakeskate"
+    }
+    </script>
 </head>
 
 
@@ -33,7 +71,7 @@
 
         <div class="articles-container">
             <div class="article-card">
-                <img src="../../images/articleWS.jpg" alt="Article Image">
+                <img src="../../images/articleWS.jpg" alt="Wakeskate sur l'eau">
                 <h1>Pourquoi le wakeskate ?</h1>
             </div>
 
