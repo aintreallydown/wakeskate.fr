@@ -2066,17 +2066,26 @@ body.theme-mentions .section {
     border-left: 4px solid #2c3e50;
 }
 
-/* Plan du site : cartes dépliables (<details class="sitemap-card">) */
-body.theme-mentions .sitemap-card {
-    max-width: 800px;
-    margin: 0 auto 16px;
+/* Plan du site : un conteneur, une card dépliable par section */
+body.theme-mentions .sitemap-title {
+    border-bottom: none;
+}
+
+body.theme-mentions .sitemap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+}
+
+body.theme-mentions .sitemap-item {
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
     border-radius: 8px;
-    color: black;
 }
 
-body.theme-mentions .sitemap-card summary {
+body.theme-mentions .sitemap-item summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2085,25 +2094,24 @@ body.theme-mentions .sitemap-card summary {
     list-style: none;
 }
 
-body.theme-mentions .sitemap-card summary::-webkit-details-marker {
+body.theme-mentions .sitemap-item summary::marker {
+    content: "";
+}
+
+body.theme-mentions .sitemap-item summary::-webkit-details-marker {
     display: none;
 }
 
-body.theme-mentions .sitemap-card summary h2 {
+body.theme-mentions .sitemap-item h2 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
-body.theme-mentions .sitemap-card summary i {
-    color: #2c3e50;
-    transition: transform 0.2s ease;
-}
-
-body.theme-mentions .sitemap-card[open] summary i {
+body.theme-mentions .sitemap-item[open] summary i {
     transform: rotate(180deg);
 }
 
-body.theme-mentions .sitemap-card ul {
+body.theme-mentions .sitemap-item ul {
     margin: 0;
     padding: 0 20px 16px 40px;
 }
