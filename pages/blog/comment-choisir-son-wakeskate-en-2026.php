@@ -20,7 +20,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Comment choisir son wakeskate en 2026 ?</title>
+    <title>Comment choisir son wakeskate en 2026 : guide complet</title>
 
     <!-- SEO -->
     <meta name="description" content="Taille, forme, matériaux, grip ou mousse : tous les critères pour bien choisir sa planche de wakeskate en 2026, débutant ou confirmé.">
@@ -30,7 +30,7 @@
     <meta property="og:type" content="article">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Comment choisir son wakeskate en 2026 ?">
+    <meta property="og:title" content="Comment choisir son wakeskate en 2026 : guide complet">
     <meta property="og:description" content="Taille, forme, matériaux, grip ou mousse : tous les critères pour bien choisir sa planche de wakeskate en 2026, débutant ou confirmé.">
     <meta property="og:url" content="https://wake-skate.fr/comment-choisir-son-wakeskate-en-2026">
     <meta property="og:image" content="https://wake-skate.fr/images/planche.jpg">
@@ -41,7 +41,7 @@
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Comment choisir son wakeskate en 2026 ?",
+        "headline": "Comment choisir son wakeskate en 2026 : guide complet",
         "description": "Taille, forme, matériaux, grip ou mousse : tous les critères pour bien choisir sa planche de wakeskate en 2026, débutant ou confirmé.",
         "image": "https://wake-skate.fr/images/planche.jpg",
         "datePublished": "2026-03-19",

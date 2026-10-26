@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <title>Wakepark Préféré en France</title>
+    <title>Wakeparks en France : mes spots pour le wakeskate</title>
 
     <!-- SEO -->
     <meta name="description" content="Mes wakeparks préférés en France pour rider en wakeskate : Verberie, Champagne Wakepark, Jablines-Annet et Le Kable.">
@@ -32,7 +32,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Wakepark Préféré en France">
+    <meta property="og:title" content="Wakeparks en France : mes spots pour le wakeskate">
     <meta property="og:description" content="Mes wakeparks préférés en France pour rider en wakeskate : Verberie, Champagne Wakepark, Jablines-Annet et Le Kable.">
     <meta property="og:url" content="https://wake-skate.fr/wakepark">
     <meta property="og:image" content="https://wake-skate.fr/images/IMG-20250712-WA0001.jpg">

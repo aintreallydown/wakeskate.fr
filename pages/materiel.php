@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <title>Materiel de wakeskate</title>
+    <title>Matériel de wakeskate : marques et setup de rider</title>
 
     <!-- SEO -->
     <meta name="description" content="Quelle planche de wakeskate choisir ? Présentation des marques (Quantum Boards, Fattitesi, Water Monster) et retour sur mon matériel perso.">
@@ -32,7 +32,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Materiel de wakeskate">
+    <meta property="og:title" content="Matériel de wakeskate : marques et setup de rider">
     <meta property="og:description" content="Quelle planche de wakeskate choisir ? Présentation des marques (Quantum Boards, Fattitesi, Water Monster) et retour sur mon matériel perso.">
     <meta property="og:url" content="https://wake-skate.fr/materiel">
     <meta property="og:image" content="https://wake-skate.fr/images/planche.jpg">

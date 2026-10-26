@@ -17,7 +17,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4810298741612120"
         crossorigin="anonymous"></script>
 
-    <title>Championnats de wakeboard & wakeskate - France 2025</title>
+    <title>Championnats de France wakeboard &amp; wakeskate 2025</title>
 
     <!-- SEO -->
     <meta name="description" content="Récit des championnats de France 2025 de wakeboard et wakeskate : ambiance, riders et résultats vus de l'intérieur.">
@@ -27,7 +27,7 @@
     <meta property="og:type" content="article">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Championnats de wakeboard &amp; wakeskate - France 2025">
+    <meta property="og:title" content="Championnats de France wakeboard &amp; wakeskate 2025">
     <meta property="og:description" content="Récit des championnats de France 2025 de wakeboard et wakeskate : ambiance, riders et résultats vus de l'intérieur.">
     <meta property="og:url" content="https://wake-skate.fr/championnats2025">
     <meta property="og:image" content="https://wake-skate.fr/images/IMG-20250706-WA0013.jpg">
@@ -38,7 +38,7 @@
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Championnats de wakeboard & wakeskate - France 2025",
+        "headline": "Championnats de France wakeboard & wakeskate 2025",
         "description": "Récit des championnats de France 2025 de wakeboard et wakeskate : ambiance, riders et résultats vus de l'intérieur.",
         "image": "https://wake-skate.fr/images/IMG-20250706-WA0013.jpg",
         "datePublished": "2025-08-11",

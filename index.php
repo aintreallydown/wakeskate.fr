@@ -29,7 +29,7 @@
     <link rel="canonical" href="https://wake-skate.fr/">
 
     <!-- Open Graph / réseaux sociaux -->
-    <meta property="og:title" content="Wake Skate - Blog et Tutoriels">
+    <meta property="og:title" content="Wakeskate : tutos, conseils et blog d'un rider">
     <meta property="og:description"
         content="Tout sur le wakeskate, astuces, vidéos et tutoriels pour débutants et pros.">
     <meta property="og:image" content="https://wake-skate.fr/images/IMG-20250712-WA0001.jpg">
@@ -61,7 +61,7 @@
 
 
 
-    <title>Wake Skate - Conseils, Tutoriels et Blog</title>
+    <title>Wakeskate : tutos, conseils et blog d'un rider</title>
     <!-- Google Tag Manager -->
 
     <script>

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     
-    <title>Ton premier pop shove derrière le câble - Tuto wakeskate</title>
+    <title>Comment faire un pop shove en wakeskate : tuto</title>
 
     <!-- SEO -->
     <meta name="description" content="Tuto wakeskate : réussir son premier pop shove derrière le câble, placement des pieds, tension du palonnier et relâchement.">
@@ -31,7 +31,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Ton premier pop shove derrière le câble - Tuto wakeskate">
+    <meta property="og:title" content="Comment faire un pop shove en wakeskate : tuto">
     <meta property="og:description" content="Tuto wakeskate : réussir son premier pop shove derrière le câble, placement des pieds, tension du palonnier et relâchement.">
     <meta property="og:url" content="https://wake-skate.fr/shove">
     <meta property="og:image" content="https://wake-skate.fr/images/tuto-shove.jpg">

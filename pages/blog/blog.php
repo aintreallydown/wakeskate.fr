@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Blog sur le wakeskate</title>
+    <title>Blog wakeskate : conseils, matos et sessions</title>
 
     <!-- SEO -->
     <meta name="description" content="Le blog wakeskate de Driss : conseils matériel, guide débutant, retours de compétitions et réflexions sur la progression en wakeskate.">
@@ -28,7 +28,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Blog sur le wakeskate">
+    <meta property="og:title" content="Blog wakeskate : conseils, matos et sessions">
     <meta property="og:description" content="Le blog wakeskate de Driss : conseils matériel, guide débutant, retours de compétitions et réflexions sur la progression en wakeskate.">
     <meta property="og:url" content="https://wake-skate.fr/blog">
     <meta property="og:image" content="https://wake-skate.fr/images/articleWS.jpg">
@@ -55,7 +55,7 @@
         <div class="articles-container">
             <article class="article-card">
                 <img src="../../images/articleWS.jpg" alt="Pourquoi le wakeskate ?">
-                <h3><a href="/quesque-le-wakeskate">Pourquoi le wakeskate ?</a></h3>
+                <h3><a href="/quesque-le-wakeskate">Qu'est-ce que le wakeskate ? La vision d'un rider</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>27 Mars 2026</time></p>
@@ -73,7 +73,7 @@
 
             <article class="article-card">
                 <img src="../../images/planche.jpg" alt="Comment choisir son wakeskate en 2026">
-                <h3><a href="/comment-choisir-son-wakeskate-en-2026">Comment choisir son wakeskate en 2026 ?</a></h3>
+                <h3><a href="/comment-choisir-son-wakeskate-en-2026">Comment choisir son wakeskate en 2026 : guide complet</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>19 Mars 2026</time></p>
@@ -91,8 +91,7 @@
 
             <article class="article-card">
                 <img src="../../images/IMG_20250709_175610_266.jpg" alt="Mon retour sur la progression en wakeskate">
-                <h3><a href="/mon-retour-sur-la-progression-en-wakeskate">Mon retour sur la progression en
-                        Wakeskate</a></h3>
+                <h3><a href="/mon-retour-sur-la-progression-en-wakeskate">Progresser en wakeskate : mon retour d'expérience</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>26 Septembre 2025</time></p>
@@ -109,8 +108,7 @@
 
             <article class="article-card">
                 <img src="../../images/FB_IMG_1697614420391.jpg" alt="Les bases du wakeskate pour débutants">
-                <h3><a href="/bases-du-wakeskate-guide-pour-debutants">Les bases du wakeskate : Guide pour débutants</a>
-                </h3>
+                <h3><a href="/bases-du-wakeskate-guide-pour-debutants">Wakeskate débutant : le guide pour bien commencer</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>3 Janvier 2026</time></p>
@@ -127,7 +125,7 @@
 
             <article class="article-card">
                 <img src="../../images/IMG-20250706-WA0013.jpg" alt="Championnats de France de wakeboard et wakeskate 2025">
-                <h3><a href="/championnats2025">Championnats de France de Wakeboard & Wakeskate 2025</a></h3>
+                <h3><a href="/championnats2025">Championnats de France wakeboard & wakeskate 2025</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>11 Août 2025</time></p>

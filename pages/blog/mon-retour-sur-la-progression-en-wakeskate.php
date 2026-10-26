@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Mon retour sur la progression en wakeskate</title>
+    <title>Progresser en wakeskate : mon retour d'expérience</title>
 
     <!-- SEO -->
     <meta name="description" content="Du skateboard au wakeskate : mon retour d'expérience sur la progression, entre sessions en solo et motivation entre potes.">
@@ -30,7 +30,7 @@
     <meta property="og:type" content="article">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Mon retour sur la progression en wakeskate">
+    <meta property="og:title" content="Progresser en wakeskate : mon retour d'expérience">
     <meta property="og:description" content="Du skateboard au wakeskate : mon retour d'expérience sur la progression, entre sessions en solo et motivation entre potes.">
     <meta property="og:url" content="https://wake-skate.fr/mon-retour-sur-la-progression-en-wakeskate">
     <meta property="og:image" content="https://wake-skate.fr/images/IMG_20250709_175610_266.jpg">
@@ -41,7 +41,7 @@
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Mon retour sur la progression en wakeskate",
+        "headline": "Progresser en wakeskate : mon retour d'expérience",
         "description": "Du skateboard au wakeskate : mon retour d'expérience sur la progression, entre sessions en solo et motivation entre potes.",
         "image": "https://wake-skate.fr/images/IMG_20250709_175610_266.jpg",
         "datePublished": "2025-09-26",

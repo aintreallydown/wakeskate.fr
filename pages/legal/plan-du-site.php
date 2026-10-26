@@ -34,8 +34,8 @@
     <div class="section">
         <h2>Accueil</h2>
         <ul>
-            <li><a href="/">Wake Skate - Conseils, Tutoriels et Blog</a></li>
-            <li><a href="/quisuisje">Qui suis-je ?</a></li>
+            <li><a href="/">Wakeskate : tutos, conseils et blog d'un rider</a></li>
+            <li><a href="/quisuisje">Driss Benkirane, rider et coach wakeskate</a></li>
         </ul>
     </div>
 
@@ -43,11 +43,11 @@
         <h2>Blog</h2>
         <ul>
             <li><a href="/blog">Tous les articles</a></li>
-            <li><a href="/quesque-le-wakeskate">Pourquoi le wakeskate ?</a></li>
-            <li><a href="/comment-choisir-son-wakeskate-en-2026">Comment choisir son wakeskate en 2026 ?</a></li>
-            <li><a href="/bases-du-wakeskate-guide-pour-debutants">Les bases du wakeskate : guide pour débutants</a></li>
-            <li><a href="/mon-retour-sur-la-progression-en-wakeskate">Mon retour sur la progression en wakeskate</a></li>
-            <li><a href="/championnats2025">Championnats de wakeboard & wakeskate - France 2025</a></li>
+            <li><a href="/quesque-le-wakeskate">Qu'est-ce que le wakeskate ? La vision d'un rider</a></li>
+            <li><a href="/comment-choisir-son-wakeskate-en-2026">Comment choisir son wakeskate en 2026 : guide complet</a></li>
+            <li><a href="/bases-du-wakeskate-guide-pour-debutants">Wakeskate débutant : le guide pour bien commencer</a></li>
+            <li><a href="/mon-retour-sur-la-progression-en-wakeskate">Progresser en wakeskate : mon retour d'expérience</a></li>
+            <li><a href="/championnats2025">Championnats de France wakeboard & wakeskate 2025</a></li>
         </ul>
     </div>
 
@@ -55,17 +55,17 @@
         <h2>Tutoriels</h2>
         <ul>
             <li><a href="/tuto">Tous les tutoriels</a></li>
-            <li><a href="/ollie">Premier ollie au wakepark</a></li>
-            <li><a href="/shove">Premier pop shove derrière le câble</a></li>
-            <li><a href="/kickflip">Premier kickflip sur l'eau</a></li>
+            <li><a href="/ollie">Comment faire un ollie en wakeskate</a></li>
+            <li><a href="/shove">Comment faire un pop shove en wakeskate</a></li>
+            <li><a href="/kickflip">Comment faire un kickflip en wakeskate</a></li>
         </ul>
     </div>
 
     <div class="section">
         <h2>Guides</h2>
         <ul>
-            <li><a href="/materiel">Matériel de wakeskate</a></li>
-            <li><a href="/wakepark">Wakeparks préférés en France</a></li>
+            <li><a href="/materiel">Matériel de wakeskate : marques et setup de rider</a></li>
+            <li><a href="/wakepark">Wakeparks en France : mes spots pour le wakeskate</a></li>
         </ul>
     </div>
 

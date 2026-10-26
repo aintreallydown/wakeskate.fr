@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Tutoriel de wakeskate</title>
+    <title>Tutos wakeskate : ollie, pop shove et kickflip</title>
 
     <!-- SEO -->
     <link rel="canonical" href="https://wake-skate.fr/tuto">
@@ -34,7 +34,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Tutoriel de wakeskate">
+    <meta property="og:title" content="Tutos wakeskate : ollie, pop shove et kickflip">
     <meta property="og:description" content="Tutos wakeskate en vidéo pour apprendre le ollie, le pop shove et le kickflip au wakepark, étape par étape.">
     <meta property="og:url" content="https://wake-skate.fr/tuto">
     <meta property="og:image" content="https://wake-skate.fr/images/tuto-ollie.jpg">
@@ -104,7 +104,7 @@
         <div class="articles-container">
             <article class="article-card">
                 <img src="../../images/tuto-ollie.jpg" alt="Ollie en wakeskate au wakepark" loading="lazy">
-                <h3><a href="/ollie">PREMIER OLLIE AU WAKEPARK</a></h3>
+                <h3><a href="/ollie">COMMENT FAIRE UN OLLIE EN WAKESKATE</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>11 Juin 2025</time></p>
@@ -119,7 +119,7 @@
 
             <article class="article-card">
                 <img src="../../images/tuto-shove.jpg" alt="Pop shove en wakeskate au wakepark" loading="lazy">
-                <h3><a href="/shove">TON PREMIER POP SHOVE DERRIÈRE LE CÂBLE</a></h3>
+                <h3><a href="/shove">COMMENT FAIRE UN POP SHOVE EN WAKESKATE</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>11 Juin 2025</time></p>
@@ -134,7 +134,7 @@
 
             <article class="article-card">
                 <img src="../../images/tuto-kickflip.jpg" alt="Kickflip en wakeskate au wakepark" loading="lazy">
-                <h3><a href="/kickflip">DÉCLENCHE TON PREMIER KICKFLIP SUR L'EAU</a></h3>
+                <h3><a href="/kickflip">COMMENT FAIRE UN KICKFLIP EN WAKESKATE</a></h3>
                 <div class="info">
                     <p><i class="fa fa-user"></i>&nbsp;Driss</p>
                     <p><i class="fa fa-calendar-day"></i>&nbsp;<time>11 Juin 2025</time></p>

@@ -18,7 +18,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4810298741612120"
         crossorigin="anonymous"></script>
 
-    <title>Les bases du wakeskate : Guide pour débutants</title>
+    <title>Wakeskate débutant : le guide pour bien commencer</title>
 
     <!-- SEO -->
     <meta name="description" content="Débuter le wakeskate : différences avec le wakeboard, position, premiers départs au câble et conseils pour bien progresser.">
@@ -28,7 +28,7 @@
     <meta property="og:type" content="article">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Les bases du wakeskate : Guide pour débutants">
+    <meta property="og:title" content="Wakeskate débutant : le guide pour bien commencer">
     <meta property="og:description" content="Débuter le wakeskate : différences avec le wakeboard, position, premiers départs au câble et conseils pour bien progresser.">
     <meta property="og:url" content="https://wake-skate.fr/bases-du-wakeskate-guide-pour-debutants">
     <meta property="og:image" content="https://wake-skate.fr/images/FB_IMG_1697614420391.jpg">
@@ -39,7 +39,7 @@
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Les bases du wakeskate : Guide pour débutants",
+        "headline": "Wakeskate débutant : le guide pour bien commencer",
         "description": "Débuter le wakeskate : différences avec le wakeboard, position, premiers départs au câble et conseils pour bien progresser.",
         "image": "https://wake-skate.fr/images/FB_IMG_1697614420391.jpg",
         "datePublished": "2026-01-03",

@@ -36,7 +36,7 @@ require_once '../back-end/contactBe.php';
 
 
 
-    <title>Qui suis je ?</title>
+    <title>Driss Benkirane, rider et coach wakeskate à Verberie</title>
 
     <!-- SEO -->
     <meta name="description" content="Interview de Driss Benkirane, opérateur wakeboard au téléski nautique de Verberie et rider wakeskate : parcours, inspirations et projets.">
@@ -46,7 +46,7 @@ require_once '../back-end/contactBe.php';
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Qui suis je ?">
+    <meta property="og:title" content="Driss Benkirane, rider et coach wakeskate à Verberie">
     <meta property="og:description" content="Interview de Driss Benkirane, opérateur wakeboard au téléski nautique de Verberie et rider wakeskate : parcours, inspirations et projets.">
     <meta property="og:url" content="https://wake-skate.fr/quisuisje">
     <meta property="og:image" content="https://wake-skate.fr/images/kickflipDriss.png">

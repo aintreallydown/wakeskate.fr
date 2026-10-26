@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     
-    <title>Premier kickflip sur l'eau - Tuto wakeskate</title>
+    <title>Comment faire un kickflip en wakeskate : tuto</title>
 
     <!-- SEO -->
     <meta name="description" content="Tuto wakeskate : apprendre le kickflip sur l'eau, position des pieds, timing jambe arrière / jambe avant et appui palonnier.">
@@ -31,7 +31,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="wake-skate.fr">
-    <meta property="og:title" content="Premier kickflip sur l'eau - Tuto wakeskate">
+    <meta property="og:title" content="Comment faire un kickflip en wakeskate : tuto">
     <meta property="og:description" content="Tuto wakeskate : apprendre le kickflip sur l'eau, position des pieds, timing jambe arrière / jambe avant et appui palonnier.">
     <meta property="og:url" content="https://wake-skate.fr/kickflip">
     <meta property="og:image" content="https://wake-skate.fr/images/tuto-kickflip.jpg">
