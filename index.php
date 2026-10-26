@@ -114,7 +114,8 @@
         <div class="schema_container_back">
             <!-- Container grid -->
             <div class="schema_container">
-                <span></span>
+                <!-- Une classe pour différencier le span vide dans le script JS -->
+                <span class="span_vide"></span>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -295,6 +296,7 @@
     <script src="../js/header.js"></script>
     <script src="../js/lazyVideo.js"></script>
     <script src="../js/scrollAnimationBounceUp.js"></script>
+    <script src="../js/waitAnimEnd.js"></script>
 
 
 </body>

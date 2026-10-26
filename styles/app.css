@@ -432,21 +432,28 @@ html {
     background: url("../images/schema.png") center / contain no-repeat;
 }
 
-/* Conteneur grid placé exactement au-dessus */
+/* Conteneur grid placé exactement au-dessus.*/
+/* Réduction du temps de transition car avec le script JS ça prend en peu plus de temps à tourner */
 .schema_container {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    grid-template-columns: 3fr 1.1fr;
-    grid-template-rows: repeat(18, 1fr);
-    row-gap: 1px;
-    z-index: 1;
-    /* Le soucis en faisant comme ça et sans faire Keyyframes c'est que si on passe vite d'un transition
-    à l'autre elle est coupé où elle part pas du bon moment l'animation.
-    l'avantage de Keyframes, même si plus lourd je te l'accords, c'est qu'on était sûr que ça repartait bien à zéro.
-    tu me diras ce que tu en penses, j'ai l'impression qu'en changeant de hover en cours de route on reprend l'anim
-    où elle était avant et du coup ça fait chelou. */
-    transition: background-image 1s ease-in, opacity 1s ease-in;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 3fr 1.1fr;
+  grid-template-rows: repeat(18, 1fr);
+  row-gap: 1px;
+  z-index: 1;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Etat de transition ou etat par défaut sans mouseenter */
+.schema_container.fading {
+  opacity: 0;
 }
 
 .schema_container span:nth-child(1) {
@@ -479,32 +486,26 @@ html {
     grid-row: 11 / span 2;
 }
 
-.schema_container:has(span:nth-child(2):hover) {
-    background: url(../images/schema1.png) center / contain no-repeat;
-    opacity: 1;
+/* Suppression des :hover, À la place je prépare les images ici pour les contrôler depuis le JS */
+.schema_container.image-1 {
+  background-image: url("../images/schema1.png");
 }
 
-/* New Bg resin ok ;) */
-.schema_container:has(span:nth-child(3):hover) {
-    background: url(../images/schema2.png) center / contain no-repeat;
-    opacity: 1;
+.schema_container.image-2 {
+  background-image: url("../images/schema2.png");
 }
 
-.schema_container:has(span:nth-child(4):hover) {
-    background: url(../images/schema3.png) center / contain no-repeat;
-    opacity: 1;
+.schema_container.image-3 {
+  background-image: url("../images/schema3.png");
 }
 
-.schema_container:has(span:nth-child(5):hover) {
-    background: url(../images/schema4.png) center / contain no-repeat;
-    opacity: 1;
+.schema_container.image-4 {
+  background-image: url("../images/schema4.png");
 }
 
-.schema_container:has(span:nth-child(6):hover) {
-    background: url(../images/schema5.png) center / contain no-repeat;
-    opacity: 1;
+.schema_container.image-5 {
+  background-image: url("../images/schema5.png");
 }
-
 
 @media (prefers-reduced-motion: reduce) {
     .float-nav {
