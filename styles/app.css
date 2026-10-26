@@ -2066,6 +2066,48 @@ body.theme-mentions .section {
     border-left: 4px solid #2c3e50;
 }
 
+/* Plan du site : cartes dépliables (<details class="sitemap-card">) */
+body.theme-mentions .sitemap-card {
+    max-width: 800px;
+    margin: 0 auto 16px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    color: black;
+}
+
+body.theme-mentions .sitemap-card summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    cursor: pointer;
+    list-style: none;
+}
+
+body.theme-mentions .sitemap-card summary::-webkit-details-marker {
+    display: none;
+}
+
+body.theme-mentions .sitemap-card summary h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+body.theme-mentions .sitemap-card summary i {
+    color: #2c3e50;
+    transition: transform 0.2s ease;
+}
+
+body.theme-mentions .sitemap-card[open] summary i {
+    transform: rotate(180deg);
+}
+
+body.theme-mentions .sitemap-card ul {
+    margin: 0;
+    padding: 0 20px 16px 40px;
+}
+
 
 /* =========================================================================
    12) POLITIQUE DE CONFIDENTIALITÉ — <body class="theme-politique">

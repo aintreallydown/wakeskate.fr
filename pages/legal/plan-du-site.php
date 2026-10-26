@@ -31,16 +31,22 @@
     <!-- ===================== PLAN DU SITE ===================== -->
     <h1>Plan du site</h1>
 
-    <div class="section">
-        <h2>Accueil</h2>
+    <details class="sitemap-card">
+        <summary>
+            <h2>Accueil</h2>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </summary>
         <ul>
             <li><a href="/">Wakeskate : tutos, conseils et blog d'un rider</a></li>
             <li><a href="/quisuisje">Driss Benkirane, rider et coach wakeskate</a></li>
         </ul>
-    </div>
+    </details>
 
-    <div class="section">
-        <h2>Blog</h2>
+    <details class="sitemap-card">
+        <summary>
+            <h2>Blog</h2>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </summary>
         <ul>
             <li><a href="/blog">Tous les articles</a></li>
             <li><a href="/quesque-le-wakeskate">Qu'est-ce que le wakeskate ? La vision d'un rider</a></li>
@@ -49,33 +55,42 @@
             <li><a href="/mon-retour-sur-la-progression-en-wakeskate">Progresser en wakeskate : mon retour d'expérience</a></li>
             <li><a href="/championnats2025">Championnats de France wakeboard & wakeskate 2025</a></li>
         </ul>
-    </div>
+    </details>
 
-    <div class="section">
-        <h2>Tutoriels</h2>
+    <details class="sitemap-card">
+        <summary>
+            <h2>Tutoriels</h2>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </summary>
         <ul>
             <li><a href="/tuto">Tous les tutoriels</a></li>
             <li><a href="/ollie">Comment faire un ollie en wakeskate</a></li>
             <li><a href="/shove">Comment faire un pop shove en wakeskate</a></li>
             <li><a href="/kickflip">Comment faire un kickflip en wakeskate</a></li>
         </ul>
-    </div>
+    </details>
 
-    <div class="section">
-        <h2>Guides</h2>
+    <details class="sitemap-card">
+        <summary>
+            <h2>Guides</h2>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </summary>
         <ul>
             <li><a href="/materiel">Matériel de wakeskate : marques et setup de rider</a></li>
             <li><a href="/wakepark">Wakeparks en France : mes spots pour le wakeskate</a></li>
         </ul>
-    </div>
+    </details>
 
-    <div class="section">
-        <h2>Informations</h2>
+    <details class="sitemap-card">
+        <summary>
+            <h2>Informations</h2>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </summary>
         <ul>
             <li><a href="/mentions-legales">Mentions légales & CGU</a></li>
             <li><a href="/politique-de-confidentialite">Politique de confidentialité</a></li>
         </ul>
-    </div>
+    </details>
     <br>
 
     <?php require_once '../../elements/footer.php'; ?>
