@@ -1,9 +1,6 @@
-// Et voilou ! Je suis content, j'en ai bavé ^^, je me suis bien arraché les cheveux.
-// Merci à Copilot pour beaucoup de choses, j'ai beaucoup appris, et je suis allé bien plus loin que mes cours actuels donc je suis content que ça fonctionne :)
-// Je pensais avoir les bases en JS pour attaquer mais non il me manquait beaucoup de notions ^^ notamment les query, les fonctions fléchées c'était vraiment tout tout frais...
-// Ça a demandé une réorganisation du CSS, c'était pas évident de me dire qu'il fallait que je revienne sur ça, mais j'ai l'impression que ça doit arriver assez souvent dans ce genre de cas.
-// J'ai essayé beaucoup de choses différentes avant d'arriver à quelque chose de satisfaisant. Je suis même passé par de la fonction asynchrone avant d'abandonner parce que c'était hors de propos xD 
-// Dis-moi ce que tu en penses ! Je suis curieux d'avoir ton avis. Grosses bises le couz'!
+// salut le couz pour l'instant j'ai juste corriger quelque pb de syntaxe rapide, j'ai pas encore tout regarder sur la logique meme si ca a l'air de marché
+// re regarderai encore plus en détails aprés. Et oui le JS peux etre un peu plus compliqué, prend le temps et ne te pete pas le crane, vas y doucement.
+
 
 const schemaContainer = document.querySelector(".schema_container");
 const spans = document.querySelectorAll(".schema_container span");
@@ -27,7 +24,9 @@ function changerImage(nouvelleImage) {
   imageDemandee = nouvelleImage;
 
   // Si transition en cours on sort
-  if (transitionEnCours) return;
+  if (transitionEnCours) {
+    return;
+  }
 
   // On informe qu'une transition est en cours
   transitionEnCours = true;
@@ -38,13 +37,18 @@ function changerImage(nouvelleImage) {
 
 // Pour chaque span (sauf le vide)
 spans.forEach((span, index) => {
-  if (span.classList.contains("span_vide")) return;
+
+  if (span.classList.contains("span_vide")) {
+    return;
+  }
 
   // Pour récupérer le bon index de span vu le span vide en position 0, comme ça index span = index classeImages
   const classeImage = classesImages[index - 1];
 
   // Si pas d'image ciao
-  if (!classeImage) return;
+  if (!classeImage) {
+    return;
+  }
 
   // Inputs de survols ou dé-survols
   span.addEventListener("mouseenter", () => {
@@ -59,8 +63,14 @@ spans.forEach((span, index) => {
 
 schemaContainer.addEventListener("transitionend", (event) => {
   // On back des déclenchements hors du container principal ou qui ne concernent pas notre transition d'opacité
-  if (event.target !== schemaContainer) return;
-  if (event.propertyName !== "opacity") return;
+
+  if (event.target !== schemaContainer) {
+    return;
+  }
+
+  if (event.propertyName !== "opacity") {
+    return;
+  }
 
   // On est en fin de transition donc on peut changer les bg
   // Merci Copilot pour les "...classesImages"
